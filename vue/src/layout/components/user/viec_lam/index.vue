@@ -3,11 +3,11 @@
         <div class="card">
             <div class="card-body">
                 <div class="row">
-                    <div class="col-lg-4" style="max-width: 473px;">
-                        <input type="text" class="form-control" placeholder="Chức danh, Kỹ năng, Tên công ty">
+                    <div class="col-lg-4" style="max-width: 473px">
+                        <input type="text" class="form-control" placeholder="Chức danh, Kỹ năng, Tên công ty" />
                     </div>
-                    <div class="col-lg-4" style="max-width: 473px;">
-                        <select class="form-select" aria-label="Default select example" style="height: 45px;">
+                    <div class="col-lg-4" style="max-width: 473px">
+                        <select class="form-select" aria-label="Default select example" style="height: 45px">
                             <option selected>Tất cả ngành nghề</option>
                             <option value="1">An Ninh/Bảo Vệ</option>
                             <option value="2">An Toàn Lao Động</option>
@@ -26,8 +26,8 @@
                             <option value="15">Y Tế/Chăm Sóc Sức Khỏe</option>
                         </select>
                     </div>
-                    <div class="col-lg-4" style="max-width: 473px;">
-                        <select class="form-select" aria-label="Default select example" style="height: 45px;">
+                    <div class="col-lg-4" style="max-width: 473px">
+                        <select class="form-select" aria-label="Default select example" style="height: 45px">
                             <option selected>Tất Cả Địa Điểm</option>
                             <option value="1">Hà Giang</option>
                             <option value="2">Cao Bằng</option>
@@ -93,13 +93,14 @@
                         </select>
                     </div>
                     <button class="btn d-flex justify-content-center align-items-center"
-                        style="background: #00B2A3; height: 45px; width: 45px;"><i
-                            class="fa-solid fa-magnifying-glass fa-xl" style="color: #FFFFFF;"></i></button>
+                        style="background: #00b2a3; height: 45px; width: 45px">
+                        <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #ffffff"></i>
+                    </button>
                 </div>
             </div>
             <div class="card-footer pe-0">
                 <div class="row">
-                    <div class="col-lg-2" style="max-width: 231px;">
+                    <div class="col-lg-2" style="max-width: 231px">
                         <select class="form-select" aria-label="Default select example">
                             <option selected>Mức Lương</option>
                             <option value="1">Từ 3.000.000 đ</option>
@@ -115,7 +116,7 @@
                             <option value="11">Từ 70.000.000 đ</option>
                         </select>
                     </div>
-                    <div class="col-lg-2 ps-0" style="max-width: 231px;">
+                    <div class="col-lg-2 ps-0" style="max-width: 231px">
                         <select class="form-select" aria-label="Default select example">
                             <option selected>Cấp Bậc</option>
                             <option value="1">Sinh viên/ Thực tập sinh</option>
@@ -127,7 +128,7 @@
                             <option value="7">Điều Hành Cấp Cao</option>
                         </select>
                     </div>
-                    <div class="col-lg-2 ps-0" style="max-width: 231px;">
+                    <div class="col-lg-2 ps-0" style="max-width: 231px">
                         <select class="form-select" aria-label="Default select example">
                             <option selected>Đăng Trong Vòng</option>
                             <option value="1">3 ngày trước</option>
@@ -136,7 +137,7 @@
                             <option value="4">1 tháng trước</option>
                         </select>
                     </div>
-                    <div class="col-lg-2 ps-0" style="max-width: 231px;">
+                    <div class="col-lg-2 ps-0" style="max-width: 231px">
                         <select class="form-select" aria-label="Default select example">
                             <option selected>Hình Thức Làm Việc</option>
                             <option value="1">Nhân Viên Chính Thức</option>
@@ -146,7 +147,7 @@
                             <option value="5">Thực Tập</option>
                         </select>
                     </div>
-                    <div class="col-lg-2 ps-0" style="max-width: 231px;">
+                    <div class="col-lg-2 ps-0" style="max-width: 231px">
                         <select class="form-select" aria-label="Default select example">
                             <option selected>Phúc Lợi Mong Muốn</option>
                             <option value="1">Bảo Hiểm Y Tế</option>
@@ -163,8 +164,8 @@
                             <option value="12">Chế Độ Thai Sản</option>
                         </select>
                     </div>
-                    <div class="col-lg-2 ps-0" style="max-width: 231px;">
-                        <select class="form-select" aria-label="Default select example" style="height: 45px;">
+                    <div class="col-lg-2 ps-0" style="max-width: 231px">
+                        <select class="form-select" aria-label="Default select example" style="height: 45px">
                             <option selected>Kinh Nghiệm Làm Việc</option>
                             <option value="1">Không Yêu Cầu Kinh Nghiệm</option>
                             <option value="2">Chưa Có Kih Nghiệm</option>
@@ -175,17 +176,258 @@
                             <option value="7">Từ 11 Năm</option>
                         </select>
                     </div>
-                    <div class="col-lg-2 ps-0 d-flex align-items-center justify-content-end" style="max-width: 90px;">
+                    <div class="col-lg-2 ps-0 d-flex align-items-center justify-content-end" style="max-width: 90px">
                         <a role="button" class="btn-clear btn-link text-decoration-none">Xóa bộ lọc</a>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="row mt-5">
+            <div class="col-lg-8">
+                <a href="">
+                    <div class="card border-primary">
+                        <div class="card-body">
+                            <div class="row mt-3">
+                                <div class="col-lg-2 me-3">
+                                    <img class="border border-3 border-dark rounded-3"
+                                        src="https://images.careerviet.vn/employer_folders/lot8/301528/155x155/104818logo.jpg"
+                                        alt="" />
+                                </div>
+                                <div class="col-lg-7" style="max-width: 550px">
+                                    <h5><b>Giám đốc điều hành mảng trang sức</b></h5>
+                                    <p class="mb-0">CÔNG TY TNHH LUCAS DIAMOND</p>
+                                    <P class="text-danger mb-0">$ Lương: 35 Tr - 40 Tr VND</P>
+                                    <p class="mb-0">
+                                        <i class="fa-solid fa-location-dot fa-sm" style="color: #5d677a"></i>
+                                        Hồ Chí Minh
+                                    </p>
+                                    <p class="mb-3">
+                                        <i class="fa-regular fa-clock fa-sm" style="color: #5d677a"></i>
+                                        Hạn Nộp: 06-02-2025
+                                    </p>
+                                    <div class="row">
+                                        <div class="col-lg-4" style="max-width: 100px">
+                                            <p>
+                                                <i class="fa-solid fa-laptop fa-sm" style="color: #5d677a"></i>
+                                                Laptop
+                                            </p>
+                                        </div>
+                                        <div class="col-lg-4 ps-0" style="max-width: 151px">
+                                            <p>
+                                                <i class="fa-solid fa-briefcase-medical fa-sm"
+                                                    style="color: #5d677a"></i>
+                                                Chế độ bảo hiểm
+                                            </p>
+                                        </div>
+                                        <div class="col-lg-4 ps-0">
+                                            <p>
+                                                <i class="fa-solid fa-plane fa-sm" style="color: #5d677a"></i>
+                                                Du lịch
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 text-end">
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <p class="mt-4 mb-0">
+                                        <i class="fa-regular fa-heart"></i> Lưu việc làm
+                                    </p>
+                                    <p>
+                                        <i class="fa-regular fa-calendar"></i> Cập nhật: 08-01-2025
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <br>
+                <a href="">
+                    <div class="card border-primary">
+                        <div class="card-body">
+                            <div class="row mt-3">
+                                <div class="col-lg-2 me-3">
+                                    <img class="border border-3 border-dark rounded-3"
+                                        src="https://images.careerviet.vn/employer_folders/lot8/301528/155x155/104818logo.jpg"
+                                        alt="" />
+                                </div>
+                                <div class="col-lg-7" style="max-width: 550px">
+                                    <h5><b>Giám đốc điều hành mảng trang sức</b></h5>
+                                    <p class="mb-0">CÔNG TY TNHH LUCAS DIAMOND</p>
+                                    <P class="text-danger mb-0">$ Lương: 35 Tr - 40 Tr VND</P>
+                                    <p class="mb-0">
+                                        <i class="fa-solid fa-location-dot fa-sm" style="color: #5d677a"></i>
+                                        Hồ Chí Minh
+                                    </p>
+                                    <p class="mb-3">
+                                        <i class="fa-regular fa-clock fa-sm" style="color: #5d677a"></i>
+                                        Hạn Nộp: 06-02-2025
+                                    </p>
+                                    <div class="row">
+                                        <div class="col-lg-4" style="max-width: 100px">
+                                            <p>
+                                                <i class="fa-solid fa-laptop fa-sm" style="color: #5d677a"></i>
+                                                Laptop
+                                            </p>
+                                        </div>
+                                        <div class="col-lg-4 ps-0" style="max-width: 151px">
+                                            <p>
+                                                <i class="fa-solid fa-briefcase-medical fa-sm"
+                                                    style="color: #5d677a"></i>
+                                                Chế độ bảo hiểm
+                                            </p>
+                                        </div>
+                                        <div class="col-lg-4 ps-0">
+                                            <p>
+                                                <i class="fa-solid fa-plane fa-sm" style="color: #5d677a"></i>
+                                                Du lịch
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 text-end">
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <p class="mt-4 mb-0">
+                                        <i class="fa-regular fa-heart"></i> Lưu việc làm
+                                    </p>
+                                    <p>
+                                        <i class="fa-regular fa-calendar"></i> Cập nhật: 08-01-2025
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <br>
+                <a href="">
+                    <div class="card border-primary">
+                        <div class="card-body">
+                            <div class="row mt-3">
+                                <div class="col-lg-2 me-3">
+                                    <img class="border border-3 border-dark rounded-3"
+                                        src="https://images.careerviet.vn/employer_folders/lot8/301528/155x155/104818logo.jpg"
+                                        alt="" />
+                                </div>
+                                <div class="col-lg-7" style="max-width: 550px">
+                                    <h5><b>Giám đốc điều hành mảng trang sức</b></h5>
+                                    <p class="mb-0">CÔNG TY TNHH LUCAS DIAMOND</p>
+                                    <P class="text-danger mb-0">$ Lương: 35 Tr - 40 Tr VND</P>
+                                    <p class="mb-0">
+                                        <i class="fa-solid fa-location-dot fa-sm" style="color: #5d677a"></i>
+                                        Hồ Chí Minh
+                                    </p>
+                                    <p class="mb-3">
+                                        <i class="fa-regular fa-clock fa-sm" style="color: #5d677a"></i>
+                                        Hạn Nộp: 06-02-2025
+                                    </p>
+                                    <div class="row">
+                                        <div class="col-lg-4" style="max-width: 100px">
+                                            <p>
+                                                <i class="fa-solid fa-laptop fa-sm" style="color: #5d677a"></i>
+                                                Laptop
+                                            </p>
+                                        </div>
+                                        <div class="col-lg-4 ps-0" style="max-width: 151px">
+                                            <p>
+                                                <i class="fa-solid fa-briefcase-medical fa-sm"
+                                                    style="color: #5d677a"></i>
+                                                Chế độ bảo hiểm
+                                            </p>
+                                        </div>
+                                        <div class="col-lg-4 ps-0">
+                                            <p>
+                                                <i class="fa-solid fa-plane fa-sm" style="color: #5d677a"></i>
+                                                Du lịch
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 text-end">
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <p class="mt-4 mb-0">
+                                        <i class="fa-regular fa-heart"></i> Lưu việc làm
+                                    </p>
+                                    <p>
+                                        <i class="fa-regular fa-calendar"></i> Cập nhật: 08-01-2025
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <br>
+                <a href="">
+                    <div class="card border-primary">
+                        <div class="card-body">
+                            <div class="row mt-3">
+                                <div class="col-lg-2 me-3">
+                                    <img class="border border-3 border-dark rounded-3"
+                                        src="https://images.careerviet.vn/employer_folders/lot8/301528/155x155/104818logo.jpg"
+                                        alt="" />
+                                </div>
+                                <div class="col-lg-7" style="max-width: 550px">
+                                    <h5><b>Giám đốc điều hành mảng trang sức</b></h5>
+                                    <p class="mb-0">CÔNG TY TNHH LUCAS DIAMOND</p>
+                                    <P class="text-danger mb-0">$ Lương: 35 Tr - 40 Tr VND</P>
+                                    <p class="mb-0">
+                                        <i class="fa-solid fa-location-dot fa-sm" style="color: #5d677a"></i>
+                                        Hồ Chí Minh
+                                    </p>
+                                    <p class="mb-3">
+                                        <i class="fa-regular fa-clock fa-sm" style="color: #5d677a"></i>
+                                        Hạn Nộp: 06-02-2025
+                                    </p>
+                                    <div class="row">
+                                        <div class="col-lg-4" style="max-width: 100px">
+                                            <p>
+                                                <i class="fa-solid fa-laptop fa-sm" style="color: #5d677a"></i>
+                                                Laptop
+                                            </p>
+                                        </div>
+                                        <div class="col-lg-4 ps-0" style="max-width: 151px">
+                                            <p>
+                                                <i class="fa-solid fa-briefcase-medical fa-sm"
+                                                    style="color: #5d677a"></i>
+                                                Chế độ bảo hiểm
+                                            </p>
+                                        </div>
+                                        <div class="col-lg-4 ps-0">
+                                            <p>
+                                                <i class="fa-solid fa-plane fa-sm" style="color: #5d677a"></i>
+                                                Du lịch
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 text-end">
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <p class="mt-4 mb-0">
+                                        <i class="fa-regular fa-heart"></i> Lưu việc làm
+                                    </p>
+                                    <p>
+                                        <i class="fa-regular fa-calendar"></i> Cập nhật: 08-01-2025
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
     </div>
 </template>
 <script>
-export default {
-
-}
+export default {};
 </script>
 <style></style>
