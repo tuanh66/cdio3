@@ -243,7 +243,7 @@
                         </div>
                     </div>
                 </a>
-                <br>
+                <br />
                 <a href="">
                     <div class="card border-primary">
                         <div class="card-body">
@@ -303,7 +303,7 @@
                         </div>
                     </div>
                 </a>
-                <br>
+                <br />
                 <a href="">
                     <div class="card border-primary">
                         <div class="card-body">
@@ -363,7 +363,7 @@
                         </div>
                     </div>
                 </a>
-                <br>
+                <br />
                 <a href="">
                     <div class="card border-primary">
                         <div class="card-body">
@@ -423,6 +423,71 @@
                         </div>
                     </div>
                 </a>
+            </div>
+            <div class="col-lg-4">
+                <div class="card border-primary">
+                    <div class="card-header border-bottom border-primary">
+                        <h5 class="mt-2"><b>Công Ty Tuyển Dụng Hàng Đầu</b></h5>
+                    </div>
+                    <div class="card-body pb-0 ps-3 pe-3">
+                        <div class="row border-bottom border-primary d-flex align-items-center">
+                            <div class="col-lg-3">
+                                <img src="https://aptech.fpt.edu.vn/wp-content/uploads/2021/04/logo-fpt.jpg" alt=""
+                                    class="mb-3 border border-primary border-2" style="width: 100px; height: 100px" />
+                            </div>
+                            <div class="col-lg-9">
+                                <h5>Công Ty Cổ Phần FPT</h5>
+                                <p class="text-justify">
+                                    Tập đoàn FPT là một trong những doanh nghiệp tư nhân lớn nhất tại Việt Nam, nổi bật
+                                    với ba lĩnh vực chính: Công nghệ, Viễn thông và Giáo dục. Công ty được biết đến với
+                                    uy tín và sự phát triển bền vững trong suốt nhiều năm qua.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row mt-3 border-bottom border-primary d-flex align-items-center">
+                            <div class="col-lg-3">
+                                <img src="https://artcity.vn/wp-content/uploads/2024/09/logo-1_600x600.jpg" alt=""
+                                    class="mb-3 border border-primary border-2" style="width: 100px; height: 100px" />
+                            </div>
+                            <div class="col-lg-9">
+                                <h5>Tập Đoàn Viettel</h5>
+                                <p class="text-justify">
+                                    Viettel là tập đoàn viễn thông và công nghệ hàng đầu Việt Nam,
+                                    cung cấp các giải pháp số hóa, viễn thông, và dịch vụ công
+                                    nghệ cao với quy mô toàn cầu.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row mt-3 border-bottom border-primary d-flex align-items-center">
+                            <div class="col-lg-3">
+                                <img src="https://mondialbrand.com/wp-content/uploads/2024/02/vinamilk-logo_brandlogos.net_quayf.png"
+                                    alt="" class="mb-3  border border-primary border-2" style="width: 100px; height: 100px" />
+                            </div>
+                            <div class="col-lg-9">
+                                <h5>Công Ty Cổ Phần Sữa (Vinamilk)</h5>
+                                <p class="text-justify">
+                                    Vinamilk là công ty sữa lớn nhất Việt Nam, chuyên cung cấp các
+                                    sản phẩm sữa chất lượng cao và đã đạt được nhiều giải thưởng
+                                    danh giá trên thế giới.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row mt-3 d-flex align-items-center">
+                            <div class="col-lg-3">
+                                <img src="https://i0.wp.com/www.senviet.art/wp-content/uploads/edd/2019/09/massan.png?fit=945%2C709&ssl=1"
+                                    alt="" class="mb-3 border border-primary border-2" style="width: 100px; height: 100px" />
+                            </div>
+                            <div class="col-lg-9">
+                                <h5>Công Ty Cổ Phần Hàng Tiêu Dùng Masan</h5>
+                                <p class="text-justify">
+                                    Masan Consumer là một trong những công ty hàng tiêu dùng hàng đầu
+                                    Việt Nam, sở hữu các thương hiệu nổi tiếng như Chin-su, Nam Ngư,
+                                    và Omachi.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
