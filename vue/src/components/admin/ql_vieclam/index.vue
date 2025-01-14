@@ -116,7 +116,7 @@
                         <label class="mb-0 mt-2">Ngày Tạo</label>
                         <input v-model="bang.ngay_tao" type="text" class="form-control" readonly>
                         <label class="mb-0 mt-2">Hạn Nộp</label>
-                        <input type="date" class="form-control">
+                        <input v-model="bang.han_nop" type="date" class="form-control">
                         <label class="mb-0 mt-2">Kinh Nghiệm</label>
                         <select v-model="bang.kinh_nghiem" class="form-select" aria-label="Default select example"
                             style="height: 45px;">
@@ -143,7 +143,7 @@
                         </select>
                     </div>
                     <div class="card-footer text-end">
-                        <button v-on:click="themjob()" class="btn btn-primary">Thêm Mới</button>
+                        <button v-on:click="addvieclam()" class="btn btn-primary">Thêm Mới</button>
                     </div>
                 </div>
             </div>
@@ -326,88 +326,30 @@ export default {
                 kinh_nghiem: '',
                 cap_bac: '',
             },
+            edit: {
+                ho_va_ten: '',
+                cong_ty: '',
+                cong_viec: '',
+                muc_luong: '',
+                dia_diem: '',
+                ngay_tao: '',
+                han_nop: '',
+                kinh_nghiem: '',
+                cap_bac: '',
+            },
+            delete_vieclam: {
+                ho_va_ten: '',
+                cong_ty: '',
+                cong_viec: '',
+                muc_luong: '',
+                dia_diem: '',
+                ngay_tao: '',
+                han_nop: '',
+                kinh_nghiem: '',
+                cap_bac: '',
+            },
+
         };
-    },
-    job_diadiem: {
-        1: "Hà Giang",
-        2: "Cao Bằng",
-        3: "Bắc Kạn",
-        4: "Tuyên Quang",
-        5: "Lào Cai",
-        6: "Yên Bái",
-        7: "Thái Nguyên",
-        8: "Lạng Sơn",
-        9: "Phú Thọ",
-        10: "Bắc Giang",
-        11: "Quảng Ninh",
-        12: "Hà Nội",
-        13: "Vĩnh Phúc",
-        14: "Bắc Ninh",
-        15: "Hải Dương",
-        16: "Hưng Yên",
-        17: "Hà Nam",
-        18: "Nam Định",
-        19: "Thái Bình",
-        20: "Hải Phòng",
-        21: "Hòa Bình",
-        22: "Sơn La",
-        23: "Điện Biên",
-        24: "Lai Châu",
-        25: "Thanh Hóa",
-        26: "Nghệ An",
-        27: "Hà Tĩnh",
-        28: "Quảng Bình",
-        29: "Quảng Trị",
-        30: "Thừa Thiên Huế",
-        31: "Đà Nẵng",
-        32: "Quảng Nam",
-        33: "Quảng Ngãi",
-        34: "Bình Định",
-        35: "Phú Yên",
-        36: "Khánh Hòa",
-        37: "Ninh Thuận",
-        38: "Bình Thuận",
-        39: "Kon Tum",
-        40: "Gia Lai",
-        41: "Đắk Lắk",
-        42: "Đắk Nông",
-        43: "Lâm Đồng",
-        44: "TP Hồ Chí Minh",
-        45: "Bà Rịa - Vũng Tàu",
-        46: "Bình Dương",
-        47: "Bình Phước",
-        48: "Đồng Nai",
-        49: "Tây Ninh",
-        50: "Long An",
-        51: "Đồng Tháp",
-        52: "Tiền Giang",
-        53: "An Giang",
-        54: "Bến Tre",
-        55: "Vĩnh Long",
-        56: "Trà Vinh",
-        57: "Cần Thơ",
-        58: "Hậu Giang",
-        59: "Sóc Trăng",
-        60: "Bạc Liêu",
-        61: "Cà Mau",
-    },
-    job_kinhnghiem: {
-        1: "Không Yêu Cầu Kinh Nghiệm",
-        2: "Chưa Có Kih Nghiệm",
-        3: "Đến Dưới 1 Năm",
-        4: "Từ 1 - 4 Năm",
-        5: "Từ 5 - 7 Năm",
-        6: "Từ 7 - 10 Năm",
-        7: "Từ 11 Năm",
-    },
-    job_capbac: {
-        1: "Sinh viên/ Thực tập sinh",
-        2: "Mới tốt nghiệp",
-        3: "Nhân viên",
-        4: "Trưởng nhóm/Giám sát",
-        5: "Quản Lý",
-        6: "Quản Lý Cấp Cao",
-        7: "Điều Hành Cấp Cao",
     },
     mounted() {
         this.laydata();
@@ -421,6 +363,84 @@ export default {
                 })
                 .catch(error => {
                     console.log(error);
+                });
+        },
+        addvieclam() {
+            axios
+                .post("http://127.0.0.1:8000/api/add-viec-lam", this.bang)
+                .then((response) => {
+                    if (response.data.status == true) {
+                        // alert(response.data.message);
+                        this.$toast.info(response.data.message);
+                        this.laydata();
+                    } else {
+                        // alert("Thêm mới thất bại");
+                        this.$toast.error("Thêm Mới Thất Bại");
+                    }
+                })
+                .catch((error) => {
+                    // Dữ liệu mà server trả về khi bị lỗi
+                    var obj = error.response.data.errors;
+                    var result = Object.keys(obj).map((key) => [key, obj[key]]);
+                    result.forEach((value_1, key_1) => {
+                        var xxx = value_1[1];
+                        xxx.forEach((value, key) => {
+                            // console.log(value);
+                            this.$toast.error(value);
+                        });
+                    });
+                });
+        },
+        editvieclam() {
+            axios
+                .post("http://127.0.0.1:8000/api/edit-viec-lam", this.edit)
+                .then((response) => {
+                    if (response.data.status == true) {
+                        // alert(response.data.message);
+                        this.$toast.info(response.data.message);
+                        this.laydata();
+                    } else {
+                        // alert("Thêm mới thất bại");
+                        this.$toast.error("Xoá Thất Bại");
+                    }
+                })
+                .catch((error) => {
+                    // Dữ liệu mà server trả về khi bị lỗi
+                    var obj = error.response.data.errors;
+                    var result = Object.keys(obj).map((key) => [key, obj[key]]);
+                    result.forEach((value_1, key_1) => {
+                        var xxx = value_1[1];
+                        xxx.forEach((value, key) => {
+                            // console.log(value);
+                            this.$toast.error(value);
+                        });
+                    });
+                });
+        },
+        deletevieclam() {
+            axios
+                .post("http://127.0.0.1:8000/api/delete-viec-lam", this.delete_vieclam)
+                .then((response) => {
+                    if (response.data.status == true) {
+                        // alert(response.data.message);
+                        this.$toast.info(response.data.message);
+                        this.laydata();
+                    } else {
+                        // alert("Thêm mới thất bại");
+                        this.$toast.error("Xoá Thất Bại");
+                    }
+                })
+                .catch((error) => {
+                    // Dữ liệu mà server trả về khi bị lỗi
+                    var obj = error.response.data.errors;
+                    var result = Object.keys(obj).map((key) => [key, obj[key]]);
+                    result.forEach((value_1, key_1) => {
+                        var xxx = value_1[1];
+                        xxx.forEach((value, key) => {
+                            // console.log(value);
+                            this.$toast.error(value);
+                        });
+                    });
                 });
         },
     },
