@@ -215,17 +215,17 @@ export default {
         const month = String(currentDate.getMonth() + 1).padStart(2, '0');
         const year = currentDate.getFullYear();
         return {
-            list_job: [],
-            add: {
-                ho_va_ten: "",
-                cong_ty: "",
-                cong_viec: null,
-                muc_luong: null,
-                dia_diem: null,
+            table_job: [],
+            bang: {
+                ho_va_ten: '',
+                cong_ty: '',
+                cong_viec: '',
+                muc_luong: '',
+                dia_diem: '',
                 ngay_tao: `${day}/${month}/${year}`,
-                han_nop: "",
-                kinh_nghiem: null,
-                cap_bac: null,
+                han_nop: '',
+                kinh_nghiem: '',
+                cap_bac: '',
             },
         };
     },

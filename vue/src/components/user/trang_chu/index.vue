@@ -33,7 +33,7 @@
             <div class="col-lg-4" style="max-width: 400px; margin-right: 153px;">
                 <div class="card border-black border-2">
                     <div class=" card-body text-center align-middle">
-                        <img src="../../../../assets/img/haha.jpg" alt="" style="width: 320px;">
+                        <img src="../../../assets/img/haha.jpg" alt="" style="width: 320px;">
                     </div>
                 </div>
                 <h4 class="text-center mt-2"><b>Trần Hữu Hiếu</b></h4>
@@ -41,7 +41,7 @@
             <div class="col-lg-4" style="max-width: 400px; margin-right: 153px;">
                 <div class="card border-black border-2">
                     <div class=" card-body text-center align-middle">
-                        <img src="../../../../assets/img/haha1.jpg" alt="" style="width: 320px; height: 454px;">
+                        <img src="../../../assets/img/haha1.jpg" alt="" style="width: 320px; height: 454px;">
                     </div>
                 </div>
                 <h4 class="text-center mt-2"><b>Trần Quang Tuấn Anh</b></h4>

@@ -8,20 +8,20 @@ const routes = [
     // user
     {
         path : '/viec-lam',
-        component: ()=>import('../layout/components/user/viec_lam/index.vue')
+        component: ()=>import('../components/user/viec_lam/index.vue')
     },
     {
         path : '/mau-cv',
-        component: ()=>import('../layout/components/user/mau_cv/index.vue')
+        component: ()=>import('../components/user/mau_cv/index.vue')
     },
     {
         path : '/trang-chu',
-        component: ()=>import('../layout/components/user/trang_chu/index.vue')
+        component: ()=>import('../components/user/trang_chu/index.vue')
     },
     // admin
     {
         path : '/admin/viec-lam',
-        component: ()=>import('../layout/components/admin/ql_vieclam/index.vue')
+        component: ()=>import('../components/admin/ql_vieclam/index.vue')
     },
 ]
 
