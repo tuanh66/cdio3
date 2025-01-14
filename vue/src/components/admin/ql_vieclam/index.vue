@@ -172,19 +172,125 @@
                                 </thead>
                                 <tbody>
                                     <template v-for="(value, index) in list_job" :key="index">
-                                        <tr>
+                                        <tr class="text-nowrap align-middle">
                                             <td>{{ index + 1 }}</td>
                                             <td>{{ value.ho_va_ten }}</td>
                                             <td>{{ value.cong_ty }}</td>
-                                            <td>{{ job_congviec[value.cong_viec] }}</td>
-                                            <td>{{ job_mucluong[value.muc_luong] }}</td>
-                                            <td>{{ job_diadiem[value.dia_diem] }}</td>
+                                            <td>
+                                                <p v-if="value.cong_viec == 1">An Ninh/Bảo Vệ</p>
+                                                <p v-if="value.cong_viec == 2">An Toàn Lao Động</p>
+                                                <p v-if="value.cong_viec == 3">Bán Hàng/Kinh Doanh</p>
+                                                <p v-if="value.cong_viec == 4">Bán Lẻ/Bán Sỉ</p>
+                                                <p v-if="value.cong_viec == 5">Bảo Hiểm</p>
+                                                <p v-if="value.cong_viec == 6">Công Nghệ Thông Tin</p>
+                                                <p v-if="value.cong_viec == 7">Giáo Dục/Đào Tạo</p>
+                                                <p v-if="value.cong_viec == 8">Kế Toán/Kiểm Toán</p>
+                                                <p v-if="value.cong_viec == 9">Kiến Trúc/Thiết Kế</p>
+                                                <p v-if="value.cong_viec == 10">Marketing/Truyền Thông</p>
+                                                <p v-if="value.cong_viec == 11">Ngân Hàng/Tài Chính</p>
+                                                <p v-if="value.cong_viec == 12">Nhân Sự</p>
+                                                <p v-if="value.cong_viec == 13">Sản Xuất/Cơ Khí</p>
+                                                <p v-if="value.cong_viec == 14">Vận Tải/Kho Vận</p>
+                                                <p v-if="value.cong_viec == 15">Y Tế/Chăm Sóc Sức Khỏe</p>
+                                            </td>
+                                            <td>
+                                                <p v-if="value.muc_luong == 1">3.000.000 đ</p>
+                                                <p v-if="value.muc_luong == 2">5.000.000 đ</p>
+                                                <p v-if="value.muc_luong == 3">7.000.000 đ</p>
+                                                <p v-if="value.muc_luong == 4">10.000.000 đ</p>
+                                                <p v-if="value.muc_luong == 5">15.000.000 đ</p>
+                                                <p v-if="value.muc_luong == 6">20.000.000 đ</p>
+                                                <p v-if="value.muc_luong == 7">30.000.000 đ</p>
+                                                <p v-if="value.muc_luong == 8">40.000.000 đ</p>
+                                                <p v-if="value.muc_luong == 9">50.000.000 đ</p>
+                                                <p v-if="value.muc_luong == 10">60.000.000 đ</p>
+                                                <p v-if="value.muc_luong == 11">70.000.000 đ</p>
+                                            </td>
+                                            <td>
+                                                <p v-if="value.dia_diem == 1">Hà Giang</p>
+                                                <p v-if="value.dia_diem == 2">Cao Bằng</p>
+                                                <p v-if="value.dia_diem == 3">Bắc Kạn</p>
+                                                <p v-if="value.dia_diem == 4">Tuyên Quang</p>
+                                                <p v-if="value.dia_diem == 5">Lào Cai</p>
+                                                <p v-if="value.dia_diem == 6">Yên Bái</p>
+                                                <p v-if="value.dia_diem == 7">Thái Nguyên</p>
+                                                <p v-if="value.dia_diem == 8">Lạng Sơn</p>
+                                                <p v-if="value.dia_diem == 9">Phú Thọ</p>
+                                                <p v-if="value.dia_diem == 10">Bắc Giang</p>
+                                                <p v-if="value.dia_diem == 11">Quảng Ninh</p>
+                                                <p v-if="value.dia_diem == 12">Hà Nội</p>
+                                                <p v-if="value.dia_diem == 13">Vĩnh Phúc</p>
+                                                <p v-if="value.dia_diem == 14">Bắc Ninh</p>
+                                                <p v-if="value.dia_diem == 15">Hải Dương</p>
+                                                <p v-if="value.dia_diem == 16">Hưng Yên</p>
+                                                <p v-if="value.dia_diem == 17">Hà Nam</p>
+                                                <p v-if="value.dia_diem == 18">Nam Định</p>
+                                                <p v-if="value.dia_diem == 19">Thái Bình</p>
+                                                <p v-if="value.dia_diem == 20">Hải Phòng</p>
+                                                <p v-if="value.dia_diem == 21">Hòa Bình</p>
+                                                <p v-if="value.dia_diem == 22">Sơn La</p>
+                                                <p v-if="value.dia_diem == 23">Điện Biên</p>
+                                                <p v-if="value.dia_diem == 24">Lai Châu</p>
+                                                <p v-if="value.dia_diem == 25">Thanh Hóa</p>
+                                                <p v-if="value.dia_diem == 26">Nghệ An</p>
+                                                <p v-if="value.dia_diem == 27">Hà Tĩnh</p>
+                                                <p v-if="value.dia_diem == 28">Quảng Bình</p>
+                                                <p v-if="value.dia_diem == 29">Quảng Trị</p>
+                                                <p v-if="value.dia_diem == 30">Thừa Thiên Huế</p>
+                                                <p v-if="value.dia_diem == 31">Đà Nẵng</p>
+                                                <p v-if="value.dia_diem == 32">Quảng Nam</p>
+                                                <p v-if="value.dia_diem == 33">Quảng Ngãi</p>
+                                                <p v-if="value.dia_diem == 34">Bình Định</p>
+                                                <p v-if="value.dia_diem == 35">Phú Yên</p>
+                                                <p v-if="value.dia_diem == 36">Khánh Hòa</p>
+                                                <p v-if="value.dia_diem == 37">Ninh Thuận</p>
+                                                <p v-if="value.dia_diem == 38">Bình Thuận</p>
+                                                <p v-if="value.dia_diem == 39">Kon Tum</p>
+                                                <p v-if="value.dia_diem == 40">Gia Lai</p>
+                                                <p v-if="value.dia_diem == 41">Đắk Lắk</p>
+                                                <p v-if="value.dia_diem == 42">Đắk Nông</p>
+                                                <p v-if="value.dia_diem == 43">Lâm Đồng</p>
+                                                <p v-if="value.dia_diem == 44">TP Hồ Chí Minh</p>
+                                                <p v-if="value.dia_diem == 45">Bà Rịa - Vũng Tàu</p>
+                                                <p v-if="value.dia_diem == 46">Bình Dương</p>
+                                                <p v-if="value.dia_diem == 47">Bình Phước</p>
+                                                <p v-if="value.dia_diem == 48">Đồng Nai</p>
+                                                <p v-if="value.dia_diem == 49">Tây Ninh</p>
+                                                <p v-if="value.dia_diem == 50">Long An</p>
+                                                <p v-if="value.dia_diem == 51">Đồng Tháp</p>
+                                                <p v-if="value.dia_diem == 52">Tiền Giang</p>
+                                                <p v-if="value.dia_diem == 53">An Giang</p>
+                                                <p v-if="value.dia_diem == 54">Bến Tre</p>
+                                                <p v-if="value.dia_diem == 55">Vĩnh Long</p>
+                                                <p v-if="value.dia_diem == 56">Trà Vinh</p>
+                                                <p v-if="value.dia_diem == 57">Cần Thơ</p>
+                                                <p v-if="value.dia_diem == 58">Hậu Giang</p>
+                                                <p v-if="value.dia_diem == 59">Sóc Trăng</p>
+                                                <p v-if="value.dia_diem == 60">Bạc Liêu</p>
+                                                <p v-if="value.dia_diem == 61">Cà Mau</p>
+                                            </td>
                                             <td>{{ value.ngay_tao }}</td>
                                             <td>{{ value.han_nop }}</td>
-                                            <td>{{ job_kinhnghiem[value.kinh_nghiem] }}</td>
-                                            <td>{{ job_capbac[value.cap_bac] }}</td>
                                             <td>
-                                                <button class="btn btn-primary">Cập Nhật</button>
+                                                <p v-if="value.muc_luong == 1">Không Yêu Cầu Kinh Nghiệm</p>
+                                                <p v-if="value.muc_luong == 2">Chưa Có Kih Nghiệm</p>
+                                                <p v-if="value.muc_luong == 3">Đến Dưới 1 Năm</p>
+                                                <p v-if="value.muc_luong == 4">Từ 1 - 4 Năm</p>
+                                                <p v-if="value.muc_luong == 5">Từ 5 - 7 Năm</p>
+                                                <p v-if="value.muc_luong == 6">Từ 7 - 10 Năm</p>
+                                                <p v-if="value.muc_luong == 7">Từ 11 Năm</p>
+                                            </td>
+                                            <td>
+                                                <p v-if="value.cap_bac == 1">Sinh viên/ Thực tập sinh</p>
+                                                <p v-if="value.cap_bac == 2">Mới tốt nghiệp</p>
+                                                <p v-if="value.cap_bac == 3">Nhân viên</p>
+                                                <p v-if="value.cap_bac == 4">Trưởng nhóm/Giám sát</p>
+                                                <p v-if="value.cap_bac == 5">Quản Lý</p>
+                                                <p v-if="value.cap_bac == 6">Quản Lý Cấp Cao</p>
+                                                <p v-if="value.cap_bac == 7">Điều Hành Cấp Cao</p>
+                                            </td>
+                                            <td>
+                                                <button class="btn btn-primary me-2">Cập Nhật</button>
                                                 <button class="btn btn-danger">Xoá</button>
                                             </td>
                                         </tr>
@@ -221,36 +327,6 @@ export default {
                 cap_bac: '',
             },
         };
-    },
-    job_congviec: {
-        1: "An Ninh/Bảo Vệ",
-        2: "An Toàn Lao Động",
-        3: "Bán Hàng/Kinh Doanh",
-        4: "Bán Lẻ/Bán Sỉ",
-        5: "Bảo Hiểm",
-        6: "Công Nghệ Thông Tin",
-        7: "Giáo Dục/Đào Tạo",
-        8: "Kế Toán/Kiểm Toán",
-        9: "Kiến Trúc/Thiết Kế",
-        10: "Marketing/Truyền Thông",
-        11: "Ngân Hàng/Tài Chính",
-        12: "Nhân Sự",
-        13: "Sản Xuất/Cơ Khí",
-        14: "Vận Tải/Kho Vận",
-        15: "Y Tế/Chăm Sóc Sức Khỏe",
-    },
-    job_mucluong: {
-        1: "3.000.000 đ",
-        2: "5.000.000 đ",
-        3: "7.000.000 đ",
-        4: "10.000.000 đ",
-        5: "15.000.000 đ",
-        6: "20.000.000 đ",
-        7: "30.000.000 đ",
-        8: "40.000.000 đ",
-        9: "50.000.000 đ",
-        10: "60.000.000 đ",
-        11: "70.000.000 đ",
     },
     job_diadiem: {
         1: "Hà Giang",
