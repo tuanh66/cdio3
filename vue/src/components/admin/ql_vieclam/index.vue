@@ -8,11 +8,11 @@
                     </div>
                     <div class="card-body">
                         <label class="mb-0">Họ Và Tên</label>
-                        <input v-model="add.ho_va_ten" type="text" class="form-control">
+                        <input v-model="bang.ho_va_ten" type="text" class="form-control">
                         <label class="mb-0 mt-2">Công Ty</label>
-                        <input v-model="add.cong_ty" type="text" class="form-control">
+                        <input v-model="bang.cong_ty" type="text" class="form-control">
                         <label class="mb-0 mt-2">Công Việc</label>
-                        <select v-model="add.cong_viec" class="form-select" aria-label="Default select example"
+                        <select v-model="bang.cong_viec" class="form-select" aria-label="Default select example"
                             style="height: 45px;">
                             <option selected>Chọn Công Việc</option>
                             <option value="1">An Ninh/Bảo Vệ</option>
@@ -32,7 +32,7 @@
                             <option value="15">Y Tế/Chăm Sóc Sức Khỏe</option>
                         </select>
                         <label class="mb-0 mt-2">Mức Lương</label>
-                        <select v-model="add.muc_luong" class="form-select" aria-label="Default select example"
+                        <select v-model="bang.muc_luong" class="form-select" aria-label="Default select example"
                             style="height: 45px;">
                             <option selected>Chọn Mức Lương</option>
                             <option value="1">3.000.000 đ</option>
@@ -48,7 +48,7 @@
                             <option value="11">70.000.000 đ</option>
                         </select>
                         <label class="mb-0 mt-2">Địa Điểm</label>
-                        <select v-model="add.dia_diem" class="form-select" aria-label="Default select example"
+                        <select v-model="bang.dia_diem" class="form-select" aria-label="Default select example"
                             style="height: 45px;">
                             <option selected>Chọn Địa Điểm</option>
                             <option value="1">Hà Giang</option>
@@ -114,11 +114,11 @@
                             <option value="61">Cà Mau</option>
                         </select>
                         <label class="mb-0 mt-2">Ngày Tạo</label>
-                        <input v-model="add.ngay_tao" type="text" class="form-control" readonly>
+                        <input v-model="bang.ngay_tao" type="text" class="form-control" readonly>
                         <label class="mb-0 mt-2">Hạn Nộp</label>
                         <input type="date" class="form-control">
                         <label class="mb-0 mt-2">Kinh Nghiệm</label>
-                        <select v-model="add.kinh_nghiem" class="form-select" aria-label="Default select example"
+                        <select v-model="bang.kinh_nghiem" class="form-select" aria-label="Default select example"
                             style="height: 45px;">
                             <option selected>Chọn Kinh Nghiệm</option>
                             <option value="1">Không Yêu Cầu Kinh Nghiệm</option>
@@ -130,7 +130,7 @@
                             <option value="7">Từ 11 Năm</option>
                         </select>
                         <label class="mb-0 mt-2">Cấp Bậc</label>
-                        <select v-model="add.cap_bac" class="form-select" aria-label="Default select example"
+                        <select v-model="bang.cap_bac" class="form-select" aria-label="Default select example"
                             style="height: 45px;">
                             <option selected>Chọn Cấp Bậc</option>
                             <option value="1">Sinh viên/ Thực tập sinh</option>
@@ -176,20 +176,13 @@
                                             <td>{{ index + 1 }}</td>
                                             <td>{{ value.ho_va_ten }}</td>
                                             <td>{{ value.cong_ty }}</td>
-                                            <td>
-                                                <b v-if="value.cong_viec == 0">hà nội</b>
-                                                <b v-if="value.cong_viec == 1">Hồ Chí Minh</b>
-                                                <b v-if="value.cong_viec == 2">An Giang</b>
-                                                <b v-if="value.cong_viec == 3">Bà Rịa - Vũng Tàu</b>
-                                                <b v-if="value.cong_viec == 4">bạc liêu</b>
-
-                                            </td>
-                                            <td>{{ value.muc_luong }}</td>
-                                            <td>{{ value.dia_diem }}</td>
+                                            <td>{{ job_congviec[value.cong_viec] }}</td>
+                                            <td>{{ job_mucluong[value.muc_luong] }}</td>
+                                            <td>{{ job_diadiem[value.dia_diem] }}</td>
                                             <td>{{ value.ngay_tao }}</td>
                                             <td>{{ value.han_nop }}</td>
-                                            <td>{{ value.kinh_nghiem }}</td>
-                                            <td>{{ value.cap_bac }}</td>
+                                            <td>{{ job_kinhnghiem[value.kinh_nghiem] }}</td>
+                                            <td>{{ job_capbac[value.cap_bac] }}</td>
                                             <td>
                                                 <button class="btn btn-primary">Cập Nhật</button>
                                                 <button class="btn btn-danger">Xoá</button>
@@ -215,7 +208,7 @@ export default {
         const month = String(currentDate.getMonth() + 1).padStart(2, '0');
         const year = currentDate.getFullYear();
         return {
-            table_job: [],
+            list_job: [],
             bang: {
                 ho_va_ten: '',
                 cong_ty: '',
@@ -229,12 +222,133 @@ export default {
             },
         };
     },
-    methods: {
-        themjob() {
-            axios
-
-        }
+    job_congviec: {
+        1: "An Ninh/Bảo Vệ",
+        2: "An Toàn Lao Động",
+        3: "Bán Hàng/Kinh Doanh",
+        4: "Bán Lẻ/Bán Sỉ",
+        5: "Bảo Hiểm",
+        6: "Công Nghệ Thông Tin",
+        7: "Giáo Dục/Đào Tạo",
+        8: "Kế Toán/Kiểm Toán",
+        9: "Kiến Trúc/Thiết Kế",
+        10: "Marketing/Truyền Thông",
+        11: "Ngân Hàng/Tài Chính",
+        12: "Nhân Sự",
+        13: "Sản Xuất/Cơ Khí",
+        14: "Vận Tải/Kho Vận",
+        15: "Y Tế/Chăm Sóc Sức Khỏe",
     },
+    job_mucluong: {
+        1: "3.000.000 đ",
+        2: "5.000.000 đ",
+        3: "7.000.000 đ",
+        4: "10.000.000 đ",
+        5: "15.000.000 đ",
+        6: "20.000.000 đ",
+        7: "30.000.000 đ",
+        8: "40.000.000 đ",
+        9: "50.000.000 đ",
+        10: "60.000.000 đ",
+        11: "70.000.000 đ",
+    },
+    job_diadiem: {
+        1: "Hà Giang",
+        2: "Cao Bằng",
+        3: "Bắc Kạn",
+        4: "Tuyên Quang",
+        5: "Lào Cai",
+        6: "Yên Bái",
+        7: "Thái Nguyên",
+        8: "Lạng Sơn",
+        9: "Phú Thọ",
+        10: "Bắc Giang",
+        11: "Quảng Ninh",
+        12: "Hà Nội",
+        13: "Vĩnh Phúc",
+        14: "Bắc Ninh",
+        15: "Hải Dương",
+        16: "Hưng Yên",
+        17: "Hà Nam",
+        18: "Nam Định",
+        19: "Thái Bình",
+        20: "Hải Phòng",
+        21: "Hòa Bình",
+        22: "Sơn La",
+        23: "Điện Biên",
+        24: "Lai Châu",
+        25: "Thanh Hóa",
+        26: "Nghệ An",
+        27: "Hà Tĩnh",
+        28: "Quảng Bình",
+        29: "Quảng Trị",
+        30: "Thừa Thiên Huế",
+        31: "Đà Nẵng",
+        32: "Quảng Nam",
+        33: "Quảng Ngãi",
+        34: "Bình Định",
+        35: "Phú Yên",
+        36: "Khánh Hòa",
+        37: "Ninh Thuận",
+        38: "Bình Thuận",
+        39: "Kon Tum",
+        40: "Gia Lai",
+        41: "Đắk Lắk",
+        42: "Đắk Nông",
+        43: "Lâm Đồng",
+        44: "TP Hồ Chí Minh",
+        45: "Bà Rịa - Vũng Tàu",
+        46: "Bình Dương",
+        47: "Bình Phước",
+        48: "Đồng Nai",
+        49: "Tây Ninh",
+        50: "Long An",
+        51: "Đồng Tháp",
+        52: "Tiền Giang",
+        53: "An Giang",
+        54: "Bến Tre",
+        55: "Vĩnh Long",
+        56: "Trà Vinh",
+        57: "Cần Thơ",
+        58: "Hậu Giang",
+        59: "Sóc Trăng",
+        60: "Bạc Liêu",
+        61: "Cà Mau",
+    },
+    job_kinhnghiem: {
+        1: "Không Yêu Cầu Kinh Nghiệm",
+        2: "Chưa Có Kih Nghiệm",
+        3: "Đến Dưới 1 Năm",
+        4: "Từ 1 - 4 Năm",
+        5: "Từ 5 - 7 Năm",
+        6: "Từ 7 - 10 Năm",
+        7: "Từ 11 Năm",
+    },
+    job_capbac: {
+        1: "Sinh viên/ Thực tập sinh",
+        2: "Mới tốt nghiệp",
+        3: "Nhân viên",
+        4: "Trưởng nhóm/Giám sát",
+        5: "Quản Lý",
+        6: "Quản Lý Cấp Cao",
+        7: "Điều Hành Cấp Cao",
+    },
+    mounted() {
+        this.laydata();
+    },
+    methods: {
+        laydata() {
+            axios
+                .get('http://127.0.0.1:8000/api/voucher')
+                .then(res => {
+                    this.voucher = res.data.data;
+                })
+                .catch(error => {
+                    console.log(error);
+                });
+        },
+    },
+
 };
 </script>
 <style></style>
