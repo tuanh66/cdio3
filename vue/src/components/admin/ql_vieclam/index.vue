@@ -339,9 +339,9 @@ export default {
     methods: {
         laydata() {
             axios
-                .get('http://127.0.0.1:8000/api/voucher')
+                .get('http://127.0.0.1:8000/api/viec-lam')
                 .then(res => {
-                    this.voucher = res.data.data;
+                    this.list_job = res.data.data;
                 })
                 .catch(error => {
                     console.log(error);
