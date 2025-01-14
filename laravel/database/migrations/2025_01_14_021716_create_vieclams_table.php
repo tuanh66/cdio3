@@ -17,11 +17,11 @@ return new class extends Migration
             $table->string('cong_ty');
             $table->integer('cong_viec');
             $table->integer('muc_luong');
-                 ('dia_diem');
-                 (`ngay_tao`);
-                 ('han_nop');
-                 ('kinh_nghiem');
-                    ('cap_bac');
+            $table->integer('dia_diem');
+            $table->date('ngay_tao');
+            $table->date('han_nop');
+            $table->integer('kinh_nghiem');
+            $table->integer('cap_bac');
             $table->timestamps();
         });
     }
