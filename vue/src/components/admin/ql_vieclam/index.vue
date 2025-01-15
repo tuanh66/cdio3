@@ -321,7 +321,7 @@ export default {
                 cong_viec: '',
                 muc_luong: '',
                 dia_diem: '',
-                ngay_tao: `${day}/${month}/${year}`,
+                ngay_tao: `${year}/${month}/${day}`,
                 han_nop: '',
                 kinh_nghiem: '',
                 cap_bac: '',
