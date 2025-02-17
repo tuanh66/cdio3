@@ -388,6 +388,20 @@
         <!--  END BODY  -->
 
     </div>
+    <footer class="bg-primary text-white py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <p class="mb-0 text-white   ">&copy; 2022 Your Company. All rights reserved.</p>
+      </div>
+      <div class="col-md-6 text-md-end">
+        <a href="#" class="text-white me-3">Terms</a>
+        <a href="#" class="text-white me-3">Privacy</a>
+        <a href="#" class="text-white me-3">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
 </template>
 <script>
 // import "../../assets/assets/js/loader.js";

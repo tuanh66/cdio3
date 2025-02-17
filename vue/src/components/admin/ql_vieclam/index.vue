@@ -122,7 +122,7 @@
                             aria-label="Default select example" style="height: 45px;">
                             <option value="" disabled hidden>Chọn Kinh Nghiệm</option>
                             <option value="1">Không Yêu Cầu Kinh Nghiệm</option>
-                            <option value="2">Chưa Có Kih Nghiệm</option>
+                            <option value="2">Chưa Có Kinh Nghiệm</option>
                             <option value="3">Đến Dưới 1 Năm</option>
                             <option value="4">Từ 1 - 4 Năm</option>
                             <option value="5">Từ 5 - 7 Năm</option>
@@ -272,13 +272,13 @@
                                             <td>{{ value.ngay_tao }}</td>
                                             <td>{{ value.han_nop }}</td>
                                             <td>
-                                                <p v-if="value.muc_luong == 1">Không Yêu Cầu Kinh Nghiệm</p>
-                                                <p v-if="value.muc_luong == 2">Chưa Có Kih Nghiệm</p>
-                                                <p v-if="value.muc_luong == 3">Đến Dưới 1 Năm</p>
-                                                <p v-if="value.muc_luong == 4">Từ 1 - 4 Năm</p>
-                                                <p v-if="value.muc_luong == 5">Từ 5 - 7 Năm</p>
-                                                <p v-if="value.muc_luong == 6">Từ 7 - 10 Năm</p>
-                                                <p v-if="value.muc_luong == 7">Từ 11 Năm</p>
+                                                <p v-if="value.kinh_nghiem == 1">Không Yêu Cầu Kinh Nghiệm</p>
+                                                <p v-if="value.kinh_nghiem == 2">Chưa Có Kinh Nghiệm</p>
+                                                <p v-if="value.kinh_nghiem == 3">Đến Dưới 1 Năm</p>
+                                                <p v-if="value.kinh_nghiem == 4">Từ 1 - 4 Năm</p>
+                                                <p v-if="value.kinh_nghiem == 5">Từ 5 - 7 Năm</p>
+                                                <p v-if="value.kinh_nghiem == 6">Từ 7 - 10 Năm</p>
+                                                <p v-if="value.kinh_nghiem == 7">Từ 11 Năm</p>
                                             </td>
                                             <td>
                                                 <p v-if="value.cap_bac == 1">Sinh viên/ Thực tập sinh</p>
@@ -322,7 +322,6 @@
                                                         <label class="mb-0 mt-2">Công Việc</label>
                                                         <select v-model="edit_vieclam.cong_viec" class="form-select"
                                                             aria-label="Default select example" style="height: 45px;">
-                                                            <option selected>Chọn Công Việc</option>
                                                             <option value="1">An Ninh/Bảo Vệ</option>
                                                             <option value="2">An Toàn Lao Động</option>
                                                             <option value="3">Bán Hàng/Kinh Doanh</option>
@@ -342,7 +341,6 @@
                                                         <label class="mb-0 mt-2">Mức Lương</label>
                                                         <select v-model="edit_vieclam.muc_luong" class="form-select"
                                                             aria-label="Default select example" style="height: 45px;">
-                                                            <option selected>Chọn Mức Lương</option>
                                                             <option value="1">3.000.000 đ</option>
                                                             <option value="2">5.000.000 đ</option>
                                                             <option value="3">7.000.000 đ</option>
@@ -358,7 +356,6 @@
                                                         <label class="mb-0 mt-2">Địa Điểm</label>
                                                         <select v-model="edit_vieclam.dia_diem" class="form-select"
                                                             aria-label="Default select example" style="height: 45px;">
-                                                            <option selected>Chọn Địa Điểm</option>
                                                             <option value="1">Hà Giang</option>
                                                             <option value="2">Cao Bằng</option>
                                                             <option value="3">Bắc Kạn</option>
@@ -432,7 +429,6 @@
                                                         <label class="mb-0 mt-2">Kinh Nghiệm</label>
                                                         <select v-model="edit_vieclam.kinh_nghiem" class="form-select"
                                                             aria-label="Default select example" style="height: 45px;">
-                                                            <option selected>Chọn Kinh Nghiệm</option>
                                                             <option value="1">Không Yêu Cầu Kinh Nghiệm</option>
                                                             <option value="2">Chưa Có Kih Nghiệm</option>
                                                             <option value="3">Đến Dưới 1 Năm</option>
@@ -444,7 +440,6 @@
                                                         <label class="mb-0 mt-2">Cấp Bậc</label>
                                                         <select v-model="edit_vieclam.cap_bac" class="form-select"
                                                             aria-label="Default select example" style="height: 45px;">
-                                                            <option selected>Chọn Cấp Bậc</option>
                                                             <option value="1">Sinh viên/ Thực tập sinh</option>
                                                             <option value="2">Mới tốt nghiệp</option>
                                                             <option value="3">Nhân viên</option>
