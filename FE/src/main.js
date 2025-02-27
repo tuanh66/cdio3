@@ -8,6 +8,7 @@ const app = createApp(App)
 app.use(router)
 app.use(Toaster, {
     position: "top-right",
+    max: 5,
   });
 app.component("default-layout", Default);
 
