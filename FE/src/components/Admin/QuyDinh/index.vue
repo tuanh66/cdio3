@@ -187,14 +187,14 @@ export default {
     methods: {
         loadData() {
             axios
-                .get('http://127.0.0.1:8000/api/admin/nhan-vien/data')
+                .get('http://127.0.0.1:8000/api/admin/quy-dinh/data')
                 .then((res) => {
                     this.list_quydinh = res.data.data;
                 });
         },
         createQuyDinh() {
             axios
-                .post('http://127.0.0.1:8000/api/admin/nhan-vien/create', this.create_quydinh)
+                .post('http://127.0.0.1:8000/api/admin/quy-dinh/create', this.create_quydinh)
                 .then((res) => {
                     if (res.data.status) {
                         this.$toast.success(res.data.message);
@@ -226,7 +226,7 @@ export default {
         },
         updateQuyDinh() {
             axios
-                .post('http://127.0.0.1:8000/api/admin/nhan-vien/update', this.update_quydinh)
+                .post('http://127.0.0.1:8000/api/admin/quy-dinh/update', this.update_quydinh)
                 .then((res) => {
                     if (res.data.status) {
                         this.$toast.success(res.data.message);
@@ -248,7 +248,7 @@ export default {
         },
         deleteQuyDinh() {
             axios
-                .post('http://127.0.0.1:8000/api/admin/nhan-vien/delete', this.delete_quydinh)
+                .post('http://127.0.0.1:8000/api/admin/quy-dinh/delete', this.delete_quydinh)
                 .then((res) => {
                     if (res.data.status) {
                         this.$toast.success(res.data.message);

@@ -16,11 +16,11 @@ Route::get('/user', function (Request $request) {
 
 
 Route::get('/admin/nhan-vien/data', [NhanVienController::class, 'getData']);
-Route::post('admin/create', [NhanVienController::class, 'store']);
-Route::post('admin/update', [NhanVienController::class, 'update']);
-Route::post('admin/delete', [NhanVienController::class, 'destroy']);
+Route::post('admin/nhan-vien/create', [NhanVienController::class, 'store']);
+Route::post('admin/nhan-vien/update', [NhanVienController::class, 'update']);
+Route::post('admin/nhan-vien/delete', [NhanVienController::class, 'destroy']);
 
-route::get('/admin/quy-dinh',[QuyDinhController::class,'getdata']);
+route::get('/admin/quy-dinh/data',[QuyDinhController::class,'getdata']);
 route::post('/admin/quy-dinh/create',[QuyDinhController::class,'store']);
 route::post('/admin/quy-dinh/update',[QuyDinhController::class,'update']);
 route::post('/admin/quy-dinh/delete',[QuyDinhController::class,'destroy']);
