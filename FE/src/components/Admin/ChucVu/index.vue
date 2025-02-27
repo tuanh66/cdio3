@@ -9,7 +9,7 @@
                     <label class="form-label">Tên chức vụ</label>
                     <input v-model="create_chucvu.ten_chuc_vu" type="text" name="" class="form-control">
                     <label class="form-label">Tình trạng</label>
-                    <select v-model="create_chucvu.tinh_trang_thai" class="form-select">
+                    <select v-model="create_chucvu.tinh_trang" class="form-select">
                         <option value="1">Hoạt Động</option>
                         <option value="0">Tạm Tắt</option>
                     </select>
@@ -40,7 +40,7 @@
                                     <tr class="text-nowrap align-middle">
                                         <td class="text-center">{{ index + 1 }}</td>
                                         <td>{{ value.ten_chuc_vu }}</td>
-                                        <td>
+                                        <td class="text-center">
                                             <button v-if="value.tinh_trang == 1" class="btn btn-success">Hiển
                                                 Thị</button>
                                             <button v-else class="btn btn-danger">Tạm Tắt</button>
@@ -62,6 +62,53 @@
             </div>
         </div>
     </div>
+    <!-- modal capnhat -->
+    <div class="modal fade" id="capnhat" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Cập nhật chức vụ</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <label class="form-label">Tên chức vụ</label>
+                    <input v-model="update_chucvu.ten_chuc_vu" type="text" class="form-control">
+                    <label class="form-label">Tình trạng</label>
+                    <select v-model="update_chucvu.tinh_trang" class="form-select">
+                        <option value="1">Hoạt Động</option>
+                        <option value="0">Tạm Tắt</option>
+                    </select>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Quay lại</button>
+                    <button v-on:click="updateChucVu()" type="button" class="btn btn-primary">Cập nhật</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end modal capnhat -->
+    <!-- modal xoa -->
+    <div class="modal fade" id="xoa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Xoá nhân viên</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-danger" role="alert">
+                        Bạn có chắc chắn muốn xóa chức v
+                        <strong>{{ delete_chucvu.ten_chuc_vu }}</strong>?
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Quay lại</button>
+                    <button v-on:click="deleteChucVu()" type="button" class="btn btn-danger">Xoá</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end modal xoa -->
 </template>
 <script>
 import axios from 'axios';

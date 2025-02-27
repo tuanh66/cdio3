@@ -26,7 +26,7 @@ route::post('/admin/quy-dinh/create',[QuyDinhController::class,'store']);
 route::post('/admin/quy-dinh/update',[QuyDinhController::class,'update']);
 route::post('/admin/quy-dinh/delete',[QuyDinhController::class,'destroy']);
 
-route::get('/admin/chuc-vu',[ChucVuController::class,'getdata']);
+route::get('/admin/chuc-vu/data',[ChucVuController::class,'getdata']);
 route::post('/admin/chuc-vu/create',[ChucVuController::class,'store']);
 route::post('/admin/chuc-vu/update',[ChucVuController::class,'update']);
 route::post('/admin/chuc-vu/delete',[ChucVuController::class,'destroy']);
