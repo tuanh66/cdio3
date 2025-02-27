@@ -52,12 +52,12 @@
                             <tbody>
                                 <template v-for="(value, index) in list_quydinh" :key="index">
                                     <tr class="text-nowrap align-middle">
-                                        <td>{{ index + 1 }}</td>
-                                        <td>{{ value.ma_so }}</td>
-                                        <td>{{ value.so_diem }}</td>
+                                        <td class="text-center">{{ index + 1 }}</td>
+                                        <td class="text-center">{{ value.ma_so }}</td>
+                                        <td class="text-center">{{ value.so_diem }}</td>
                                         <td>{{ value.noi_dung }}</td>
                                         <td>{{ value.ghi_chu }}</td>
-                                        <td>{{ value.loai_diem }}</td>
+                                        <td class="text-center">{{ value.loai_diem }}</td>
                                         <td class="text-center">
                                             <button v-if="value.tinh_trang == 1" class="btn btn-success">Hoạt
                                                 Động</button>
@@ -65,7 +65,7 @@
                                         </td>
                                         <td class="text-center">
                                             <button v-on:click="Object.assign(update_quydinh, value)"
-                                                class="btn btn-primary" data-bs-toggle="modal"
+                                                class="btn btn-primary me-2" data-bs-toggle="modal"
                                                 data-bs-target="#capnhat">Câp nhật</button>
                                             <button v-on:click="Object.assign(delete_quydinh, value)"
                                                 class="btn btn-danger" data-bs-toggle="modal"
@@ -143,7 +143,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Quay lại</button>
-                    <button v-on:click="deleteNhanVien()" type="button" class="btn btn-danger">Xoá</button>
+                    <button v-on:click="deleteQuyDinh()" type="button" class="btn btn-danger">Xoá</button>
                 </div>
             </div>
         </div>
@@ -151,6 +151,8 @@
     <!-- end modal xoa -->
 </template>
 <script>
+import axios from 'axios';
+
 export default {
     data() {
         return {
@@ -187,14 +189,14 @@ export default {
     methods: {
         loadData() {
             axios
-                .get('http://127.0.0.1:8000/api/admin/nhan-vien/data')
+                .get('http://127.0.0.1:8000/api/admin/quy-dinh/data')
                 .then((res) => {
                     this.list_quydinh = res.data.data;
                 });
         },
         createQuyDinh() {
             axios
-                .post('http://127.0.0.1:8000/api/admin/nhan-vien/create', this.create_quydinh)
+                .post('http://127.0.0.1:8000/api/admin/quy-dinh/create', this.create_quydinh)
                 .then((res) => {
                     if (res.data.status) {
                         this.$toast.success(res.data.message);
@@ -226,7 +228,7 @@ export default {
         },
         updateQuyDinh() {
             axios
-                .post('http://127.0.0.1:8000/api/admin/nhan-vien/update', this.update_quydinh)
+                .post('http://127.0.0.1:8000/api/admin/quy-dinh/update', this.update_quydinh)
                 .then((res) => {
                     if (res.data.status) {
                         this.$toast.success(res.data.message);
@@ -248,7 +250,7 @@ export default {
         },
         deleteQuyDinh() {
             axios
-                .post('http://127.0.0.1:8000/api/admin/nhan-vien/delete', this.delete_quydinh)
+                .post('http://127.0.0.1:8000/api/admin/quy-dinh/delete', this.delete_quydinh)
                 .then((res) => {
                     if (res.data.status) {
                         this.$toast.success(res.data.message);

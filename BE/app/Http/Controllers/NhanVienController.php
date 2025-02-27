@@ -36,7 +36,7 @@ class NhanVienController extends Controller
             'message'   => 'Them thanh cong',
         ]);
     }
-    public function update(NhanVienThemMoiRequest $request)
+    public function update(Request $request)
     {
         NhanVien::where('id', $request->id)
             ->update([
