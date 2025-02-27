@@ -3,6 +3,11 @@ import { createRouter, createWebHistory } from "vue-router"; // cài vue-router:
 const routes = [
     // Admin
     {
+        path : '/admin/dang-nhap',
+        component: ()=>import('../components/Admin/DangNhap/index.vue'),
+        meta: { layout: "blank"}
+    },
+    {
         path : '/admin/nhan-vien',
         component: ()=>import('../components/Admin/NhanVien/index.vue'),
 
