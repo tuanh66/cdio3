@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('quy_dinhs', function (Blueprint $table) {
             $table->id();
-            $table->integer('ma_so');
+            $table->string('ma_so');
             $table->integer('so_diem');
             $table->string('noi_dung');
             $table->string('ghi_chu');

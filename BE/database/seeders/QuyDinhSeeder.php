@@ -17,11 +17,11 @@ class QuyDinhSeeder extends Seeder
         DB::table('quy_dinhs')->truncate();
         DB::table('quy_dinhs')->insert([
             'ma_so'      =>'QD001',
-            'so_diem'      =>'10',
+            'so_diem'      =>10,
             'noi_dung'      =>'Điểm thưởng cho hoàn thành  công việc đúng hạn',
             'ghi_chu'      =>'áp dụng cho tất cả nhân viên ',
             'loai_diem'      =>'100',
-            'tinh_trang'      =>'hiển thị',
+            'tinh_trang'      =>1,
         ]);
     }
 }
