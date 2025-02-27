@@ -191,7 +191,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Quay lại</button>
-                    <button v-on:click="capnhatNhanVien()" type="button" class="btn btn-primary">Cập nhật</button>
+                    <button v-on:click="updateNhanVien()" type="button" class="btn btn-primary">Cập nhật</button>
                 </div>
             </div>
         </div>
@@ -315,7 +315,7 @@ export default {
         },
         updateNhanVien() {
             axios
-                .post('http://127.0.0.1:8000/api/admin/nhan-vien/update', this.update_nhan_vien)
+                .post('http://127.0.0.1:8000/api/admin/nhan-vien/update', this.update_nhanvien)
                 .then((res) => {
                     if (res.data.status) {
                         this.$toast.success(res.data.message);
