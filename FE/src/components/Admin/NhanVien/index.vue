@@ -287,15 +287,17 @@ export default {
                 .then((res) => {
                     if (res.data.status) {
                         this.$toast.success(res.data.message);
-                        this.create_nhan_vien = {
+                        this.create_nhanvien = {
                             ho_va_ten: "",
                             email: "",
                             password: "",
-                            re_password: "",
+                            ngay_sinh: "",
                             so_dien_thoai: "",
                             dia_chi: "",
-                            ngay_sinh: "",
-                            tinh_trang: "",
+                            luong_co_ban: "",
+                            chuc_vu: "",
+                            phong_ban: "",
+                            tinh_trang: ""
                         };
                         this.loadData();
                     } else {

@@ -196,19 +196,17 @@ export default {
         },
         createQuyDinh() {
             axios
-                .post('http://127.0.0.1:8000/api/admin/quy-dinh/create', this.create_quydinh)
+                .post('http://127.0.0.1:8000/api/admin/chuc-vu/create', this.create_quydinh)
                 .then((res) => {
                     if (res.data.status) {
                         this.$toast.success(res.data.message);
-                        this.create_nhan_vien = {
-                            ho_va_ten: "",
-                            email: "",
-                            password: "",
-                            re_password: "",
-                            so_dien_thoai: "",
-                            dia_chi: "",
-                            ngay_sinh: "",
-                            tinh_trang: "",
+                        this.create_quydinh = {
+                            ma_so: "",
+                            so_diem: "",
+                            noi_dung: "",
+                            ghi_chu: "",
+                            loai_diem: "",
+                            tinh_trang: ""
                         };
                         this.loadData();
                     } else {
