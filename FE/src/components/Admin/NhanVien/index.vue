@@ -58,10 +58,11 @@
                                     <button v-else class="btn btn-danger" style="width: 106px;">Tạm Tắt</button>
                                 </td>
                                 <td class="text-center">
-                                    <button v-on:click="Object.assign(update_nhapvien, value)" class="btn btn-primary me-2" data-bs-toggle="modal"
+                                    <button v-on:click="Object.assign(update_nhapvien, value)"
+                                        class="btn btn-primary me-2" data-bs-toggle="modal"
                                         data-bs-target="#capnhat">Cập nhật</button>
-                                    <button v-on:click="Object.assign(delete_nhanvien, value)" class="btn btn-danger" data-bs-toggle="modal"
-                                        data-bs-target="#xoa">Xoá</button>
+                                    <button v-on:click="Object.assign(delete_nhanvien, value)" class="btn btn-danger"
+                                        data-bs-toggle="modal" data-bs-target="#xoa">Xoá</button>
                                 </td>
                             </tr>
                         </template>
@@ -118,7 +119,7 @@
                         </div>
                         <div class="col-md-6 md-3">
                             <label class="form-label">Tình trạng</label>
-                            <select v-model="create_nhanvien.tinh_trang" class="form-select" >
+                            <select v-model="create_nhanvien.tinh_trang" class="form-select">
                                 <option value="1">Hoạt Động</option>
                                 <option value="0">Tạm Tắt</option>
                             </select>
@@ -133,6 +134,91 @@
         </div>
     </div>
     <!-- end modal themmoi -->
+    <!-- modal capnhat -->
+    <div class="modal fade" id="capnhat" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Cập nhật nhân viên</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6 md-3">
+                            <label class="form-label">Họ và tên</label>
+                            <input v-model="update_nhapvien.ho_va_ten" type="text" class="form-control">
+                        </div>
+                        <div class="col-md-6 md-3">
+                            <label class="form-label">Email</label>
+                            <input v-model="update_nhapvien.email" type="email" class="form-control">
+                        </div>
+                        <div class="col-md-6 md-3">
+                            <label class="form-label">Password</label>
+                            <input v-model="update_nhapvien.password" type="text" class="form-control">
+                        </div>
+                        <div class="col-md-6 md-3">
+                            <label class="form-label">Ngày Sinh</label>
+                            <input v-model="update_nhapvien.ngay_sinh" type="date" class="form-control">
+                        </div>
+                        <div class="col-md-6 md-3">
+                            <label class="form-label">Số điện thoại</label>
+                            <input v-model="update_nhapvien.so_dien_thoai" type="number" class="form-control">
+                        </div>
+                        <div class="col-md-6 md-3">
+                            <label class="form-label">Địa chỉ</label>
+                            <input v-model="update_nhapvien.dia_chi" type="text" class="form-control">
+                        </div>
+                        <div class="col-md-6 md-3">
+                            <label class="form-label">Lương cơ bản</label>
+                            <input v-model="update_nhapvien.luong_co_ban" type="number" class="form-control">
+                        </div>
+                        <div class="col-md-6 md-3">
+                            <label class="form-label">Chức vụ</label>
+                            <input v-model="update_nhapvien.chuc_vu" type="text" class="form-control">
+                        </div>
+                        <div class="col-md-6 md-3">
+                            <label class="form-label">Phòng ban</label>
+                            <input v-model="update_nhapvien.phong_ban" type="text" class="form-control">
+                        </div>
+                        <div class="col-md-6 md-3">
+                            <label class="form-label">Tình trạng</label>
+                            <select v-model="update_nhapvien.tinh_trang" class="form-select">
+                                <option value="1">Hoạt Động</option>
+                                <option value="0">Tạm Tắt</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Quay lại</button>
+                    <button v-on:click="capnhatNhanVien()" type="button" class="btn btn-primary">Cập nhật</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end modal capnhat -->
+    <!-- modal xoa -->
+    <div class="modal fade" id="xoa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Xoá nhân viên</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-danger" role="alert">
+                        Bạn có chắc chắn muốn xóa nhân viên
+                        <strong>{{ delete_nhanvien.ho_va_ten }}</strong>?
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Quay lại</button>
+                    <button v-on:click="deleteNhanVien()" type="button" class="btn btn-danger">Xoá</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end modal xoa -->
 </template>
 <script>
 import axios from 'axios';
@@ -251,7 +337,7 @@ export default {
         },
         deleteNhanVien() {
             axios
-                .post('http://127.0.0.1:8000/api/admin/nhan-vien/delete', this.delete_nhan_vien)
+                .post('http://127.0.0.1:8000/api/admin/nhan-vien/delete', this.delete_nhanvien)
                 .then((res) => {
                     if (res.data.status) {
                         this.$toast.success(res.data.message);
