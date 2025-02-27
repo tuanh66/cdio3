@@ -97,7 +97,7 @@
                 </div>
                 <div class="modal-body">
                     <div class="alert alert-danger" role="alert">
-                        Bạn có chắc chắn muốn xóa chức v
+                        Bạn có chắc chắn muốn xóa chức vụ
                         <strong>{{ delete_chucvu.ten_chuc_vu }}</strong>?
                     </div>
                 </div>
