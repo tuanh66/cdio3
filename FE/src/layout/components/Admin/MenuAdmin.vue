@@ -48,6 +48,15 @@
 						</a>
 					</router-link>
 				</li>
+				<li class="nav-item">
+					<router-link to="/admin/chuc-vu">
+						<a class="nav-link" href="/admin/chuc-vu">
+							<div class="parent-icon"><i class="fa-solid fa-bookmark"></i>
+							</div>
+							<div class="menu-title">Chức Vụ</div>
+						</a>
+					</router-link>
+				</li>
 			</ul>
 		</nav>
 	</div>
