@@ -14,7 +14,7 @@
                     <input v-model="create_quydinh.noi_dung" type="text" class="form-control"
                         placeholder="Vd: Điểm cho công việc đúng hạ">
                     <label class="form-label">Ghi chú</label>
-                    <textarea class="form-control" style="height: 80px"></textarea>
+                    <textarea v-model="create_quydinh.ghi_chu" class="form-control" style="height: 80px"></textarea>
                     <label class="form-label">Loại điểm</label>
                     <input v-model="create_quydinh.loai_diem" type="text" class="form-control">
                     <label class="form-label">Tình trạng</label>
