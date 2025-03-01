@@ -18,32 +18,32 @@ class QuyDinhController extends Controller
     public function store(Request $request)
     {
         QuyDinh::create([
-           'ma_so'   =>$request->ma_so,
-        'so_diem'   =>$request->so_diem,
-        'noi_dung'   =>$request->noi_dung,
-        'ghi_chu'   =>$request->ghi_chu,
-        'loai_diem'   =>$request->loai_diem,
-        'tinh_trang'   =>$request->tinh_trang,
+            'ma_so'   => $request->ma_so,
+            'so_diem'   => $request->so_diem,
+            'noi_dung'   => $request->noi_dung,
+            'ghi_chu'   => $request->ghi_chu,
+            'loai_diem'   => $request->loai_diem,
+            'tinh_trang'   => $request->tinh_trang,
         ]);
         return response()->json([
             'status'    => true,
-            'message'   => 'Them thanh cong',
+            'message'   => 'Thêm Mới Thành Công',
         ]);
     }
     public function update(Request $request)
     {
         QuyDinh::where('id', $request->id)
             ->update([
-                'ma_so'   =>$request->ma_so,
-                'so_diem'   =>$request->so_diem,
-                'noi_dung'   =>$request->noi_dung,
-                'ghi_chu'   =>$request->ghi_chu,
-                'loai_diem'   =>$request->loai_diem,
-                'tinh_trang'   =>$request->tinh_trang,
+                'ma_so'   => $request->ma_so,
+                'so_diem'   => $request->so_diem,
+                'noi_dung'   => $request->noi_dung,
+                'ghi_chu'   => $request->ghi_chu,
+                'loai_diem'   => $request->loai_diem,
+                'tinh_trang'   => $request->tinh_trang,
             ]);
         return response()->json([
             'status' => true,
-            'message' => 'cập nhật thành công!!'
+            'message' => 'Cập nhật thành công!!'
         ]);
     }
     public function destroy(Request $request)

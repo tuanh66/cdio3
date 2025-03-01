@@ -8,9 +8,14 @@ return new class extends Migration
 {
     public function up(): void
     {
-        Schema::create('chuc_vus', function (Blueprint $table) {
+        Schema::create('quan_tri_viens', function (Blueprint $table) {
             $table->id();
-            $table->string('ten_chuc_vu');
+            $table->string('ho_va_ten');
+            $table->string('email');
+            $table->string('password');
+            $table->string('so_dien_thoai');
+            $table->date('ngay_sinh');
+            $table->string('chuc_vu');
             $table->integer('tinh_trang');
             $table->timestamps();
         });
@@ -18,6 +23,6 @@ return new class extends Migration
 
     public function down(): void
     {
-        Schema::dropIfExists('chuc_vus');
+        Schema::dropIfExists('quan_tri_viens');
     }
 };

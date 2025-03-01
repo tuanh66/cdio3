@@ -31,6 +31,15 @@
 					</ul>
 				</li>
 				<li class="nav-item">
+					<router-link to="/admin/quan-tri-vien">
+						<a class="nav-link" href="/admin/quan-tri-vien">
+							<div class="parent-icon"><i class="fa-solid fa-user-lock"></i>
+							</div>
+							<div class="menu-title">Quản Trị Viên</div>
+						</a>
+					</router-link>
+				</li>
+				<li class="nav-item">
 					<router-link to="/admin/nhan-vien">
 						<a class="nav-link" href="/admin/nhan-vien">
 							<div class="parent-icon"><i class="fa-solid fa-user-lock"></i>

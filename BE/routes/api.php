@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ChucVuController;
 use App\Http\Controllers\NhanVienController;
+use App\Http\Controllers\QuanTriVienController;
 use App\Http\Controllers\QuyDinhController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -11,10 +12,10 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:sanctum');
 
 //Admin
-
-
-
-
+Route::get('/admin/quan-tri-vien/data', [QuanTriVienController::class, 'getData']);
+Route::post('admin/quan-tri-vien/create', [QuanTriVienController::class, 'store']);
+Route::post('admin/quan-tri-vien/update', [QuanTriVienController::class, 'update']);
+Route::post('admin/quan-tri-vien/delete', [QuanTriVienController::class, 'destroy']);
 
 Route::get('/admin/nhan-vien/data', [NhanVienController::class, 'getData']);
 Route::post('admin/nhan-vien/create', [NhanVienController::class, 'store']);
@@ -31,3 +32,4 @@ route::post('/admin/chuc-vu/create',[ChucVuController::class,'store']);
 route::post('/admin/chuc-vu/update',[ChucVuController::class,'update']);
 route::post('/admin/chuc-vu/delete',[ChucVuController::class,'destroy']);
 
+route::get('/admin/quan-tri-vien/data',[QuanTriVienController::class,'getdata']);

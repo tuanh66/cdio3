@@ -18,20 +18,20 @@ class ChucVuController extends Controller
     public function store(Request $request)
     {
         ChucVu::create([
-           'ten_chuc_vu' =>$request->ten_chuc_vu,
-            'tinh_trang' =>$request->tinh_trang,
+            'ten_chuc_vu' => $request->ten_chuc_vu,
+            'tinh_trang'  => $request->tinh_trang,
         ]);
         return response()->json([
             'status'    => true,
-            'message'   => 'Them thanh cong',
+            'message'   => 'Thêm Thành Công!!',
         ]);
     }
     public function update(Request $request)
     {
         ChucVu::where('id', $request->id)
             ->update([
-              'ten_chuc_vu' =>$request->ten_chuc_vu,
-            'tinh_trang' =>$request->tinh_trang,
+                'ten_chuc_vu' => $request->ten_chuc_vu,
+                'tinh_trang' => $request->tinh_trang,
             ]);
         return response()->json([
             'status' => true,

@@ -122,7 +122,7 @@ export default {
                 tinh_trang: ''
             },
             update_chucvu: {
-                ten_chuc_vu: '',
+                ten_chuc_vu: '', 
                 tinh_trang: ''
             },
             delete_chucvu: {

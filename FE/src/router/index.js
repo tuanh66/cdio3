@@ -8,6 +8,10 @@ const routes = [
         meta: { layout: "blank"}
     },
     {
+        path : '/admin/quan-tri-vien',
+        component: ()=>import('../components/Admin/QuanTriVien/index.vue'),
+    },
+    {
         path : '/admin/nhan-vien',
         component: ()=>import('../components/Admin/NhanVien/index.vue'),
 

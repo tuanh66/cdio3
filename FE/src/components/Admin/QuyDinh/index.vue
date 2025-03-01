@@ -61,7 +61,7 @@
                                         <td class="text-center">
                                             <button v-if="value.tinh_trang == 1" class="btn btn-success">Hoạt
                                                 Động</button>
-                                            <button v-else class="btn btn-danger">Tạm Tắt</button>
+                                            <button v-else class="btn btn-danger" style="width: 106px;">Tạm Tắt</button>
                                         </td>
                                         <td class="text-center">
                                             <button v-on:click="Object.assign(update_quydinh, value)"
@@ -108,7 +108,7 @@
                         </div>
                         <div class="col-md-6 md-3">
                             <label class="form-label">Loại điểm</label>
-                            <input v-model="update_quydinh.loai_diem" type="number" class="form-control">
+                            <input v-model="update_quydinh.loai_diem" type="text" class="form-control">
                         </div>
                         <div class="col-md-6 md-3">
                             <label class="form-label">Tình trạng</label>
@@ -196,7 +196,7 @@ export default {
         },
         createQuyDinh() {
             axios
-                .post('http://127.0.0.1:8000/api/admin/chuc-vu/create', this.create_quydinh)
+                .post('http://127.0.0.1:8000/api/admin/quy-dinh/create', this.create_quydinh)
                 .then((res) => {
                     if (res.data.status) {
                         this.$toast.success(res.data.message);
