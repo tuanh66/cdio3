@@ -11,7 +11,6 @@ class QuyDinh extends Model
         'ma_so',
         'so_diem',
         'noi_dung',
-        'ghi_chu',
         'loai_diem',
         'tinh_trang',
     ];
