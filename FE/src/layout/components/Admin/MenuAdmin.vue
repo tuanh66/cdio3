@@ -30,25 +30,6 @@
 						</li>
 					</ul>
 				</li>
-				
-				<li class="nav-item">
-					<router-link to="/admin/trang-chu">
-						<a class="nav-link" href="/admin/trang-chu">
-							<div class="parent-icon"><i class="fa-solid fa-user-lock"></i>
-							</div>
-							<div class="menu-title">Trang Chủ</div>
-						</a>
-					</router-link>
-				</li>
-				<li class="nav-item">
-					<router-link to="/admin/viec-lam">
-						<a class="nav-link" href="/admin/viec-lam">
-							<div class="parent-icon"><i class="fa-solid fa-user-lock"></i>
-							</div>
-							<div class="menu-title">việc làm</div>
-						</a>
-					</router-link>
-				</li>
 				<li class="nav-item">
 					<router-link to="/admin/quan-tri-vien">
 						<a class="nav-link" href="/admin/quan-tri-vien">

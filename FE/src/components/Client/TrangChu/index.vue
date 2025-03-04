@@ -30,15 +30,15 @@
         </div>
         <div class="row mt-5">
             <h1 class="text-center mb-3"><b>Người Tư Vấn</b></h1>
-            <div class="col-lg-4" style="max-width: 400px; margin-right: 153px;">
+            <div class="col-lg-3" style="max-width: 400px; margin-right: 31.3px;">
                 <div class="card border-black border-2">
                     <div class=" card-body text-center align-middle">
-                        <img src="../../../assets/images/login-images/haha.jpg" alt="" style="width: 320px;">
+                        <img src="../../../assets/images/login-images/haha.jpg" alt="" style="width: 320px; height: 454px;">
                     </div>
                 </div>
                 <h4 class="text-center mt-2"><b>Trần Hữu Hiếu</b></h4>
             </div>
-            <div class="col-lg-4" style="max-width: 400px; margin-right: 153px;">
+            <div class="col-lg-3" style="max-width: 400px; margin-right: 31.3px;">
                 <div class="card border-black border-2">
                     <div class=" card-body text-center align-middle">
                         <img src="../../../assets/images/login-images/haha1.jpg" alt="" style="width: 320px; height: 454px;">
@@ -46,12 +46,21 @@
                 </div>
                 <h4 class="text-center mt-2"><b>Trần Quang Tuấn Anh</b></h4>
             </div>
-            <div class="col-lg-4 pe-0" style="max-width: 400px;">
+            <div class="col-lg-3" style="max-width: 400px; margin-right: 31.3px;">
                 <div class="card border-black border-2">
                     <div class=" card-body text-center align-middle">
-                        <img src="https://static.careerviet.vn/themes/cv_tool/images/template/9_1682486998.jpg" alt="">
+                        <img src="../../../assets/images/aDuc.jpg" alt="" style="width: 320px; height: 454px;">
                     </div>
                 </div>
+                <h4 class="text-center mt-2"><b>Võ Văn Đức</b></h4>
+            </div>
+            <div class="col-lg-3" style="max-width: 400px;">
+                <div class="card border-black border-2">
+                    <div class=" card-body text-center align-middle">
+                        <img src="../../../assets/images/Ken.jpg" alt="" style="width: 320px; height: 454px;">
+                    </div>
+                </div>
+                <h4 class="text-center mt-2"><b>Trần Thị Phương Thảo</b></h4>
             </div>
         </div>
     </div>
