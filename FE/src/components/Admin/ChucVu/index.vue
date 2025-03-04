@@ -10,7 +10,7 @@
                     <input v-model="create_chucvu.ten_chuc_vu" type="text" name="" class="form-control">
                     <label class="form-label">Tình trạng</label>
                     <select v-model="create_chucvu.tinh_trang" class="form-select">
-                        <option value="1">Hoạt Động</option>
+                        <option value="1">Hiển Thị</option>
                         <option value="0">Tạm Tắt</option>
                     </select>
                 </div>
@@ -103,7 +103,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Quay lại</button>
-                    <button v-on:click="deleteChucVu()" type="button" class="btn btn-danger">Xoá</button>
+                    <button v-on:click="deleteChucVu()" type="button" class="btn btn-danger" data-bs-dismiss="modal">Xoá</button>
                 </div>
             </div>
         </div>

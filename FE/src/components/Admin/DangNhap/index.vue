@@ -6,7 +6,7 @@
                     <div class="card radius-10">
                         <div class="card-body p-4">
                             <div class="text-center mb-4">
-                                <img src="https://dzfullstack.com/assets/images/logo-1.png" width="150" alt="" />
+                                <img src="../../../assets/images/logo-nhom3.png" width="200" alt="" />
                                 <h4 class="mt-3 font-weight-bold">ĐĂNG NHẬP ADMIN</h4>
                             </div>
                             <div class="form-body">

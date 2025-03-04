@@ -26,6 +26,16 @@ const routes = [
         component: ()=>import('../components/Admin/ChucVu/index.vue'),
 
     },
+    {
+        path : '/admin/trang-chu',
+        component: ()=>import('../components/Admin/trang_chu/index.vue'),
+
+    }, {
+        path : '/admin/viec-lam',
+        component: ()=>import('../components/Admin/viec_lam/index.vue'),
+
+    },
+
 ]
 
 const router = createRouter({

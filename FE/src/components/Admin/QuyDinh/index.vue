@@ -143,7 +143,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Quay lại</button>
-                    <button v-on:click="deleteQuyDinh()" type="button" class="btn btn-danger">Xoá</button>
+                    <button v-on:click="deleteQuyDinh()" type="button" class="btn btn-danger" data-bs-dismiss="modal">Xoá</button>
                 </div>
             </div>
         </div>
