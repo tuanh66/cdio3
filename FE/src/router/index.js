@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router"; // cài vue-router: npm install vue-router@next --save
+import checkAdminLogin from "./checkAdminLogin";
 
 const routes = [
     // Admin
@@ -8,23 +9,24 @@ const routes = [
         meta: { layout: "blank" }
     },
     {
-        path: '/admin/quan-tri-vien',
-        component: () => import('../components/Admin/QuanTriVien/index.vue'),
-    },
-    {
         path: '/admin/nhan-vien',
         component: () => import('../components/Admin/NhanVien/index.vue'),
-
+        beforeEnter: checkAdminLogin
     },
     {
         path: '/admin/quy-dinh',
         component: () => import('../components/Admin/QuyDinh/index.vue'),
-
+        beforeEnter: checkAdminLogin
     },
     {
         path: '/admin/chuc-vu',
         component: () => import('../components/Admin/ChucVu/index.vue'),
-
+        beforeEnter: checkAdminLogin
+    },
+    {
+        path: '/admin/profile',
+        component: () => import('../components/Admin/Profile/index.vue'),
+        beforeEnter: checkAdminLogin
     },
 
     // Client

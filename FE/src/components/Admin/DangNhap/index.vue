@@ -6,7 +6,7 @@
                     <div class="card radius-10">
                         <div class="card-body p-4">
                             <div class="text-center mb-4">
-                                <img src="../../../assets/images/logo-nhom3.png" width="200" alt="" />
+                                <img src="https://dzfullstack.com/assets/images/logo-1.png" width="150" alt="" />
                                 <h4 class="mt-3 font-weight-bold">ĐĂNG NHẬP ADMIN</h4>
                             </div>
                             <div class="form-body">
@@ -66,7 +66,7 @@ export default {
                     if (res.data.status) {
                         localStorage.setItem('nhan_vien_login', res.data.token);
                         this.$toast.success(res.data.message);
-                        this.$router.push('/admin/quan-an');
+                        this.$router.push('/admin/nhan-vien');
                     } else {
                         this.$toast.error(res.data.message);
                     }

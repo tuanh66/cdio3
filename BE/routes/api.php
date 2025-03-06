@@ -12,10 +12,11 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:sanctum');
 
 //Admin
-Route::get('/admin/quan-tri-vien/data', [QuanTriVienController::class, 'getData']);
-Route::post('admin/quan-tri-vien/create', [QuanTriVienController::class, 'store']);
-Route::post('admin/quan-tri-vien/update', [QuanTriVienController::class, 'update']);
-Route::post('admin/quan-tri-vien/delete', [QuanTriVienController::class, 'destroy']);
+
+Route::post('/admin/dang-nhap', [NhanVienController::class, 'login']);
+Route::post('/admin/doi-mat-khau', [NhanVienController::class, 'doiMatKhau']);
+Route::get('/admin/profile', [NhanVienController::class, 'profile']);
+Route::get('/admin/check-token', [NhanVienController::class, 'checkToken']);
 
 Route::get('/admin/nhan-vien/data', [NhanVienController::class, 'getData']);
 Route::post('admin/nhan-vien/create', [NhanVienController::class, 'store']);

@@ -362,14 +362,15 @@
 					role="button" data-bs-toggle="dropdown" aria-expanded="false">
 					<img src="https://dzfullstack.com/assets/images/logo-img.png" class="user-img" alt="user avatar">
 					<div class="user-info ps-3">
-						<p class="user-name mb-0">Admin</p>
+						<p class="user-name mb-0">{{ ho_ten }}</p>
 						<p class="designattion mb-0">Admin</p>
 					</div>
 				</a>
 				<ul class="dropdown-menu dropdown-menu-end">
 					<li>
 						<router-link to="/admin/profile">
-							<a class="dropdown-item" href="/admin/profile"><i class="bx bx-user"></i><span>Profile</span></a>
+							<a class="dropdown-item" href="/admin/profile"><i
+									class="bx bx-user"></i><span>Profile</span></a>
 						</router-link>
 					</li>
 					<li><a class="dropdown-item" href="javascript:;"><i
@@ -382,7 +383,11 @@
 </template>
 <script>
 export default {
-    
+	data() {
+		return {
+			ho_ten: localStorage.getItem('ho_ten_nhan_vien'),
+		}
+	}
 }
 </script>
 <style></style>
