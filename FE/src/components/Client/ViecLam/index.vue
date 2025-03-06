@@ -184,26 +184,26 @@
         </div>
         <div class="row mt-5">
             <div class="col-lg-8">
-                <a href="">
+                <a href="https://careerviet.vn/vi/tim-viec-lam/chuyen-vien-phan-tich-it.35C370EC.html">
                     <div class="card border-primary">
                         <div class="card-body">
                             <div class="row mt-3">
                                 <div class="col-lg-2 me-3">
-                                    <img class="border border-3 border-dark rounded-3"
-                                        src="https://images.careerviet.vn/employer_folders/lot8/301528/155x155/104818logo.jpg"
+                                    <img class="border border-3 border-dark rounded-3" style="width: 161px; height: 158px;"
+                                        src="https://images.careerviet.vn/employer_folders/lot8/293878/148x148/100122vtsemester2023-4.png"
                                         alt="" />
                                 </div>
                                 <div class="col-lg-7" style="max-width: 550px">
-                                    <h5><b>Giám đốc điều hành mảng trang sức</b></h5>
-                                    <p class="mb-0">CÔNG TY TNHH LUCAS DIAMOND</p>
-                                    <P class="text-danger mb-0">$ Lương: 35 Tr - 40 Tr VND</P>
+                                    <h5><b>Chuyên viên phân tích IT</b></h5>
+                                    <p class="mb-0">CÔNG TY TNHH Y TẾ VIỆT TIẾN</p>
+                                    <P class="text-danger mb-0">$ Lương: Cạnh tranh</P>
                                     <p class="mb-0">
                                         <i class="fa-solid fa-location-dot fa-sm" style="color: #5d677a"></i>
                                         Hồ Chí Minh
                                     </p>
                                     <p class="mb-3">
                                         <i class="fa-regular fa-clock fa-sm" style="color: #5d677a"></i>
-                                        Hạn Nộp: 06-02-2025
+                                        Hạn Nộp: 24-04-2025
                                     </p>
                                     <div class="row">
                                         <div class="col-lg-4" style="max-width: 100px">
@@ -244,26 +244,27 @@
                     </div>
                 </a>
                 <br />
-                <a href="">
+                <a
+                    href="https://careerviet.vn/vi/tim-viec-lam/chuyen-vien-tu-van-giao-duc-ocean-edu-cam-pha-thu-nhap-tu-13-trieu-thang.35C370EB.html">
                     <div class="card border-primary">
                         <div class="card-body">
                             <div class="row mt-3">
                                 <div class="col-lg-2 me-3">
-                                    <img class="border border-3 border-dark rounded-3"
-                                        src="https://images.careerviet.vn/employer_folders/lot8/301528/155x155/104818logo.jpg"
+                                    <img class="border border-3 border-dark rounded-3" style="width: 161px; height: 158px;"
+                                        src="https://images.careerviet.vn/employer_folders/lot8/130588/148x148/153940logooceanedu01.png"
                                         alt="" />
                                 </div>
                                 <div class="col-lg-7" style="max-width: 550px">
-                                    <h5><b>Giám đốc điều hành mảng trang sức</b></h5>
-                                    <p class="mb-0">CÔNG TY TNHH LUCAS DIAMOND</p>
-                                    <P class="text-danger mb-0">$ Lương: 35 Tr - 40 Tr VND</P>
+                                    <h5><b>Chuyên viên Tư vấn giáo dục - Ocean Edu Cẩm Phả</b></h5>
+                                    <p class="mb-0">Công Ty CP Giáo Dục Đại Dương</p>
+                                    <P class="text-danger mb-0">$ Lương: Cạnh tranh</P>
                                     <p class="mb-0">
                                         <i class="fa-solid fa-location-dot fa-sm" style="color: #5d677a"></i>
-                                        Hồ Chí Minh
+                                        Quảng Ninh
                                     </p>
                                     <p class="mb-3">
                                         <i class="fa-regular fa-clock fa-sm" style="color: #5d677a"></i>
-                                        Hạn Nộp: 06-02-2025
+                                        Hạn Nộp: 31-03-2025
                                     </p>
                                     <div class="row">
                                         <div class="col-lg-4" style="max-width: 100px">
@@ -304,26 +305,26 @@
                     </div>
                 </a>
                 <br />
-                <a href="">
+                <a href="https://careerviet.vn/vi/tim-viec-lam/nhan-vien-kinh-doanh-thi-truong-binh-dinh-phu-yen-gia-lai-quang-binh.35C370EA.html">
                     <div class="card border-primary">
                         <div class="card-body">
                             <div class="row mt-3">
                                 <div class="col-lg-2 me-3">
-                                    <img class="border border-3 border-dark rounded-3"
-                                        src="https://images.careerviet.vn/employer_folders/lot8/301528/155x155/104818logo.jpg"
+                                    <img class="border border-3 border-dark rounded-3 " style="width: 161px; height: 158px;"
+                                        src="https://images.careerviet.vn/employers/62827/148x148/134906maxresdefault.jpg"
                                         alt="" />
                                 </div>
                                 <div class="col-lg-7" style="max-width: 550px">
-                                    <h5><b>Giám đốc điều hành mảng trang sức</b></h5>
-                                    <p class="mb-0">CÔNG TY TNHH LUCAS DIAMOND</p>
-                                    <P class="text-danger mb-0">$ Lương: 35 Tr - 40 Tr VND</P>
+                                    <h5><b>Nhân viên kinh doanh thị trường</b></h5>
+                                    <p class="mb-0">Công ty Cổ Phần Nhựa Thiếu Niên Tiển Phong Phía Nam</p>
+                                    <P class="text-danger mb-0">$ Lương: Cạnh tranh</P>
                                     <p class="mb-0">
                                         <i class="fa-solid fa-location-dot fa-sm" style="color: #5d677a"></i>
                                         Hồ Chí Minh
                                     </p>
                                     <p class="mb-3">
                                         <i class="fa-regular fa-clock fa-sm" style="color: #5d677a"></i>
-                                        Hạn Nộp: 06-02-2025
+                                        Hạn Nộp: 31-03-2025
                                     </p>
                                     <div class="row">
                                         <div class="col-lg-4" style="max-width: 100px">
@@ -364,7 +365,7 @@
                     </div>
                 </a>
                 <br />
-                <a href="">
+                <a href="https://careerviet.vn/vi/tim-viec-lam/nhan-vien-kinh-doanh-online.35C2A60B.html">
                     <div class="card border-primary">
                         <div class="card-body">
                             <div class="row mt-3">
@@ -374,9 +375,9 @@
                                         alt="" />
                                 </div>
                                 <div class="col-lg-7" style="max-width: 550px">
-                                    <h5><b>Giám đốc điều hành mảng trang sức</b></h5>
+                                    <h5><b>Sale online</b></h5>
                                     <p class="mb-0">CÔNG TY TNHH LUCAS DIAMOND</p>
-                                    <P class="text-danger mb-0">$ Lương: 35 Tr - 40 Tr VND</P>
+                                    <P class="text-danger mb-0">$ Lương: 12 Tr - 20 Tr VND</P>
                                     <p class="mb-0">
                                         <i class="fa-solid fa-location-dot fa-sm" style="color: #5d677a"></i>
                                         Hồ Chí Minh
@@ -461,7 +462,8 @@
                         <div class="row mt-3 border-bottom border-primary d-flex align-items-center">
                             <div class="col-lg-3">
                                 <img src="https://mondialbrand.com/wp-content/uploads/2024/02/vinamilk-logo_brandlogos.net_quayf.png"
-                                    alt="" class="mb-3  border border-primary border-2" style="width: 100px; height: 100px" />
+                                    alt="" class="mb-3  border border-primary border-2"
+                                    style="width: 100px; height: 100px" />
                             </div>
                             <div class="col-lg-9">
                                 <h5>Công Ty Cổ Phần Sữa (Vinamilk)</h5>
@@ -475,7 +477,8 @@
                         <div class="row mt-3 d-flex align-items-center">
                             <div class="col-lg-3">
                                 <img src="https://i0.wp.com/www.senviet.art/wp-content/uploads/edd/2019/09/massan.png?fit=945%2C709&ssl=1"
-                                    alt="" class="mb-3 border border-primary border-2" style="width: 100px; height: 100px" />
+                                    alt="" class="mb-3 border border-primary border-2"
+                                    style="width: 100px; height: 100px" />
                             </div>
                             <div class="col-lg-9">
                                 <h5>Công Ty Cổ Phần Hàng Tiêu Dùng Masan</h5>

@@ -35,7 +35,7 @@
 						<a class="nav-link" href="/admin/quan-tri-vien">
 							<div class="parent-icon"><i class="fa-solid fa-user-lock"></i>
 							</div>
-							<div class="menu-title">Quản Trị Viên</div>
+							<div class="menu-title">Admin</div>
 						</a>
 					</router-link>
 				</li>

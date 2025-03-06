@@ -37,6 +37,11 @@ const routes = [
         component: () => import('../components/Client/ViecLam/index.vue'),
         meta: { layout: "client" }
     },
+    {
+        path: '/client/job',
+        component: () => import('../components/Client/Job/index.vue'),
+        meta: { layout: "client" }
+    },
 
 
 

@@ -12,7 +12,7 @@ class QuyDinhController extends Controller
         $data = QuyDinh::get();
 
         return response()->json([
-            'data' => $data
+            'data' => $data 
         ]);
     }
     public function store(Request $request)
