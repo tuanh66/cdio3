@@ -34,7 +34,7 @@
       <div class="row mt-5">
         <h1 class="text-center mb-3"><b>Người Tư Vấn (Hãy Chọn)</b></h1>
         <div class="col-lg-3" style="max-width: 400px; margin-right: 31.3px;">
-          <a href="">
+          <a href="https://careerviet.vn/vi/tim-viec-lam/nhan-vien-kinh-doanh-online.35C2A60B.html">
             <div class="card border-black border-2">
               <div class=" card-body text-center align-middle">
                 <img src="../../../assets/images/login-images/haha.jpg" alt="" style="width: 320px; height: 454px;">
@@ -44,7 +44,7 @@
           </a>
         </div>
         <div class="col-lg-3" style="max-width: 400px; margin-right: 31.3px;">
-          <a href="">
+          <a href="https://careerviet.vn/vi/tim-viec-lam/nhan-vien-kinh-doanh-online.35C2A60B.html">
             <div class="card border-black border-2">
               <div class=" card-body text-center align-middle">
                 <img src="../../../assets/images/login-images/haha1.jpg" alt="" style="width: 320px; height: 454px;">
@@ -54,7 +54,7 @@
           </a>
         </div>
         <div class="col-lg-3" style="max-width: 400px; margin-right: 31.3px;">
-          <a href="">
+          <a href="https://careerviet.vn/vi/tim-viec-lam/nhan-vien-kinh-doanh-online.35C2A60B.html">
             <div class="card border-black border-2">
               <div class=" card-body text-center align-middle">
                 <img src="../../../assets/images/aDuc.jpg" alt="" style="width: 320px; height: 454px;">
@@ -64,7 +64,7 @@
           </a>
         </div>
         <div class="col-lg-3" style="max-width: 400px;">
-          <a href="">
+          <a href="https://careerviet.vn/vi/tim-viec-lam/nhan-vien-kinh-doanh-online.35C2A60B.html">
             <div class="card border-black border-2">
               <div class=" card-body text-center align-middle">
                 <img src="../../../assets/images/Ken.jpg" alt="" style="width: 320px; height: 454px;">

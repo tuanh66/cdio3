@@ -58,7 +58,7 @@
                                     <button v-else class="btn btn-danger" style="width: 106px;">Tạm Tắt</button>
                                 </td>
                                 <td class="text-center">
-                                    <button v-on:click="Object.assign(update_nhapvien, value)"
+                                    <button v-on:click="Object.assign(update_nhanvien, value)"
                                         class="btn btn-primary me-2" data-bs-toggle="modal"
                                         data-bs-target="#capnhat">Cập nhật</button>
                                     <button v-on:click="Object.assign(delete_nhanvien, value)" class="btn btn-danger"
@@ -146,43 +146,43 @@
                     <div class="row">
                         <div class="col-md-6 md-3">
                             <label class="form-label">Họ và tên</label>
-                            <input v-model="update_nhapvien.ho_va_ten" type="text" class="form-control">
+                            <input v-model="update_nhanvien.ho_va_ten" type="text" class="form-control">
                         </div>
                         <div class="col-md-6 md-3">
                             <label class="form-label">Email</label>
-                            <input v-model="update_nhapvien.email" type="email" class="form-control">
+                            <input v-model="update_nhanvien.email" type="email" class="form-control">
                         </div>
                         <div class="col-md-6 md-3">
                             <label class="form-label">Password</label>
-                            <input v-model="update_nhapvien.password" type="text" class="form-control">
+                            <input v-model="update_nhanvien.password" type="text" class="form-control">
                         </div>
                         <div class="col-md-6 md-3">
                             <label class="form-label">Ngày Sinh</label>
-                            <input v-model="update_nhapvien.ngay_sinh" type="date" class="form-control">
+                            <input v-model="update_nhanvien.ngay_sinh" type="date" class="form-control">
                         </div>
                         <div class="col-md-6 md-3">
                             <label class="form-label">Số điện thoại</label>
-                            <input v-model="update_nhapvien.so_dien_thoai" type="number" class="form-control">
+                            <input v-model="update_nhanvien.so_dien_thoai" type="number" class="form-control">
                         </div>
                         <div class="col-md-6 md-3">
                             <label class="form-label">Địa chỉ</label>
-                            <input v-model="update_nhapvien.dia_chi" type="text" class="form-control">
+                            <input v-model="update_nhanvien.dia_chi" type="text" class="form-control">
                         </div>
                         <div class="col-md-6 md-3">
                             <label class="form-label">Lương cơ bản</label>
-                            <input v-model="update_nhapvien.luong_co_ban" type="number" class="form-control">
+                            <input v-model="update_nhanvien.luong_co_ban" type="number" class="form-control">
                         </div>
                         <div class="col-md-6 md-3">
                             <label class="form-label">Chức vụ</label>
-                            <input v-model="update_nhapvien.chuc_vu" type="text" class="form-control">
+                            <input v-model="update_nhanvien.chuc_vu" type="text" class="form-control">
                         </div>
                         <div class="col-md-6 md-3">
                             <label class="form-label">Phòng ban</label>
-                            <input v-model="update_nhapvien.phong_ban" type="text" class="form-control">
+                            <input v-model="update_nhanvien.phong_ban" type="text" class="form-control">
                         </div>
                         <div class="col-md-6 md-3">
                             <label class="form-label">Tình trạng</label>
-                            <select v-model="update_nhapvien.tinh_trang" class="form-select">
+                            <select v-model="update_nhanvien.tinh_trang" class="form-select">
                                 <option value="1">Hoạt Động</option>
                                 <option value="0">Tạm Tắt</option>
                             </select>
@@ -191,7 +191,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Quay lại</button>
-                    <button v-on:click="updateNhanVien()" type="button" class="btn btn-primary">Cập nhật</button>
+                    <button v-on:click="updateNhanVien()" type="button" class="btn btn-primary" data-bs-dismiss="modal">Cập nhật</button>
                 </div>
             </div>
         </div>
@@ -239,7 +239,7 @@ export default {
                 phong_ban: '',
                 tinh_trang: ''
             },
-            update_nhapvien: {
+            update_nhanvien: {
                 ho_va_ten: '',
                 email: '',
                 password: '',

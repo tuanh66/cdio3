@@ -32,9 +32,9 @@ Route::post('/client/doi-mat-khau', [KhachHangController::class, 'doiMatKhau']);
 Route::post('/client/doi-user', [KhachHangController::class, 'doiUser']);
 
 Route::get('/admin/khach-hang/data', [KhachHangController::class, 'getData']);
-Route::post('admin/khach-hang/create', [KhachHangController::class, 'store']);
-Route::post('admin/khach-hang/update', [KhachHangController::class, 'update']);
-Route::post('admin/khach-hang/delete', [KhachHangController::class, 'destroy']);
+Route::post('/admin/khach-hang/create', [KhachHangController::class, 'store']);
+Route::post('/admin/khach-hang/update', [KhachHangController::class, 'update']);
+Route::post('/admin/khach-hang/delete', [KhachHangController::class, 'destroy']);
 
 route::get('/admin/quy-dinh/data',[QuyDinhController::class,'getdata']);
 route::post('/admin/quy-dinh/create',[QuyDinhController::class,'store']);

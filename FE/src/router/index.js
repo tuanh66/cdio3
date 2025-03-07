@@ -18,6 +18,7 @@ const routes = [
     {
         path: '/admin/khach-hang',
         component: () => import('../components/Admin/KhachHang/index.vue'),
+        beforeEnter: checkAdminLogin
     },
     {
         path: '/admin/quy-dinh',
