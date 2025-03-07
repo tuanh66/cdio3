@@ -30,6 +30,15 @@
 						</a>
 					</router-link>
 				</li>
+				<li class="nav-item">
+					<router-link to="/client/cam-nang">
+						<a class="nav-link" href="/client/cam-nang">
+							<div class="parent-icon"><i class="fa-solid fa-book-tanakh"></i>
+							</div>
+							<div class="menu-title">Cẩm Nang</div>
+						</a>
+					</router-link>
+				</li>
 			</ul>
 		</nav>
 	</div>

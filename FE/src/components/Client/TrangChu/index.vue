@@ -109,7 +109,7 @@ export default defineComponent({
         if (window.CozeWebSDK) {
           new window.CozeWebSDK.WebChatClient({
             config: {
-              bot_id: '7445946489404653576',
+              bot_id: '7456995142441353234',
             },
             componentProps: {
               title: 'Trợ Lý AI',
@@ -141,3 +141,6 @@ export default defineComponent({
 <style scoped>
 /* Thêm các kiểu CSS nếu cần */
 </style>
+
+
+ 

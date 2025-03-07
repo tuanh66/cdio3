@@ -47,9 +47,16 @@ const routes = [
         component: () => import('../components/Client/TrangChu/index.vue'),
         meta: { layout: "client" },
         beforeEnter: checkClientLogin
-    }, {
+    }, 
+    {
         path: '/client/viec-lam',
         component: () => import('../components/Client/ViecLam/index.vue'),
+        meta: { layout: "client" },
+        beforeEnter: checkClientLogin
+    },
+    {
+        path: '/client/cam-nang',
+        component: () => import('../components/Client/CamNang/index.vue'),
         meta: { layout: "client" },
         beforeEnter: checkClientLogin
     },
