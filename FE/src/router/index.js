@@ -1,5 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router"; // cài vue-router: npm install vue-router@next --save
 import checkAdminLogin from "./checkAdminLogin";
+import checkClientLogin from "./checkClientLogin";
+
 
 const routes = [
     // Admin
@@ -12,6 +14,10 @@ const routes = [
         path: '/admin/nhan-vien',
         component: () => import('../components/Admin/NhanVien/index.vue'),
         beforeEnter: checkAdminLogin
+    },
+    {
+        path: '/admin/khach-hang',
+        component: () => import('../components/Admin/KhachHang/index.vue'),
     },
     {
         path: '/admin/quy-dinh',
@@ -31,23 +37,27 @@ const routes = [
 
     // Client
     {
+        path: '/client/dang-nhap',
+        component: () => import('../components/Client/DangNhap/index.vue'),
+        meta: { layout: "blank" }
+    },
+    {
         path: '/client/trang-chu',
         component: () => import('../components/Client/TrangChu/index.vue'),
-        meta: { layout: "client" }
+        meta: { layout: "client" },
+        beforeEnter: checkClientLogin
     }, {
         path: '/client/viec-lam',
         component: () => import('../components/Client/ViecLam/index.vue'),
-        meta: { layout: "client" }
+        meta: { layout: "client" },
+        beforeEnter: checkClientLogin
     },
     {
-        path: '/client/job',
-        component: () => import('../components/Client/Job/index.vue'),
-        meta: { layout: "client" }
+        path: '/client/profile',
+        component: () => import('../components/Client/Profile/index.vue'),
+        meta: { layout: "client" },
+        beforeEnter: checkClientLogin
     },
-
-
-
-
 ]
 
 const router = createRouter({

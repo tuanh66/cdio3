@@ -61,8 +61,7 @@
                                                     <h6 class="mb-0">Email</h6>
                                                 </div>
                                                 <div class="col-lg-9 text-secondary">
-                                                    <input v-model="user.email" type="text" class="form-control"
-                                                        placeholder="Nhập email">
+                                                    <input v-model="user.email" type="text" class="form-control" placeholder="Nhập email">
                                                 </div>
                                             </div>
                                             <div class="row mb-3">
@@ -106,8 +105,7 @@
                                     <label for="">Mật khẩu cũ</label>
                                 </div>
                                 <div class="col-lg-3">
-                                    <input v-model="doi_mat_khau.mat_khau_cu" type="text" placeholder="Nhập mật khẩu cũ"
-                                        class="form-control">
+                                    <input v-model="doi_mat_khau.mat_khau_cu" type="text" placeholder="Nhập mật khẩu cũ" class="form-control">
                                 </div>
                             </div>
 
@@ -116,8 +114,7 @@
                                     <label for="">Mật khẩu mới</label>
                                 </div>
                                 <div class="col-lg-3">
-                                    <input v-model="doi_mat_khau.mat_khau_moi" type="password"
-                                        placeholder="Nhập mật khẩu mới" class="form-control">
+                                    <input v-model="doi_mat_khau.mat_khau_moi" type="password" placeholder="Nhập mật khẩu mới" class="form-control">
                                 </div>
                             </div>
                             <div class="row mb-2">
@@ -125,8 +122,7 @@
                                     <label for="">Nhập lại Mật khẩu mới </label>
                                 </div>
                                 <div class="col-lg-3">
-                                    <input v-model="doi_mat_khau.xac_nhan_mat_khau_moi" type="password"
-                                        placeholder="Nhập lại mật khẩu mới" class="form-control">
+                                    <input v-model="doi_mat_khau.xac_nhan_mat_khau_moi" type="password" placeholder="Nhập lại mật khẩu mới" class="form-control">
                                 </div>
                             </div>
                             <button v-on:click="doiMatKhau()" class="btn btn-primary">Lưu</button>
@@ -144,7 +140,7 @@ export default {
     data() {
         return {
             user: {},
-            doi_mat_khau: {
+            doi_mat_khau : {
                 mat_khau_cu: "",
                 mat_khau_moi: "",
                 xac_nhan_mat_khau_moi: ""
@@ -156,11 +152,12 @@ export default {
         this.layThongTinLogin();
     },
     methods: {
-        doiMatKhau() {
+        doiMatKhau()
+        {
             axios
-                .post("http://127.0.0.1:8000/api/admin/doi-mat-khau", this.doi_mat_khau, {
+                .post("http://127.0.0.1:8000/api/client/doi-mat-khau", this.doi_mat_khau , {
                     headers: {
-                        Authorization: "Bearer " + localStorage.getItem("nhan_vien_login"),
+                        Authorization: "Bearer " + localStorage.getItem("khach_hang_login"),
                     },
                 })
                 .then((res) => {
@@ -183,9 +180,9 @@ export default {
                 })
         },
         layThongTinLogin() {
-            var token = localStorage.getItem("nhan_vien_login");
+            var token = localStorage.getItem("khach_hang_login");
             axios
-                .get("http://127.0.0.1:8000/api/admin/profile", {
+                .get("http://127.0.0.1:8000/api/client/profile", {
                     headers: {
                         Authorization: "Bearer " + token,
                     },

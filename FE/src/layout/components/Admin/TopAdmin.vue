@@ -385,7 +385,7 @@
 export default {
 	data() {
 		return {
-			ho_ten: localStorage.getItem('ho_ten_nhan_vien'),
+			ho_ten : localStorage.getItem('ho_ten_nhan_vien'),
 		}
 	}
 }

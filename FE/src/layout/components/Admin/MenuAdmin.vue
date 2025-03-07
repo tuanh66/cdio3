@@ -40,6 +40,15 @@
 					</router-link>
 				</li>
 				<li class="nav-item">
+					<router-link to="/admin/khach-hang">
+						<a class="nav-link" href="/admin/khach-hang">
+							<div class="parent-icon"><i class="fa-solid fa-user-lock"></i>
+							</div>
+							<div class="menu-title">Khách Hàng</div>
+						</a>
+					</router-link>
+				</li>
+				<li class="nav-item">
 					<router-link to="/admin/quy-dinh">
 						<a class="nav-link" href="/admin/quy-dinh">
 							<div class="parent-icon"><i class="fa-solid fa-bookmark"></i>
