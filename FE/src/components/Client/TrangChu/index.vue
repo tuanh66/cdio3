@@ -139,7 +139,7 @@ export default defineComponent({
 </script>
 
 <style scoped>
-/* Thêm các kiểu CSS nếu cần */
+
 </style>
 
 
